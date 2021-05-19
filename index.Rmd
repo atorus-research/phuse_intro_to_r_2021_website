@@ -1,9 +1,11 @@
 ---
 title: "Introduction to R for the Statistical Programmer"
 description: |
-  A three hour workshop to get you started using R for all your clinical trial analyses
+  A three hour workshop to get you started using R for all your clinical trial analyses 
 site: distill::distill_website
 ---
+
+<div style="display:flex;justify-content:center;"><img src="www/Atorus_Logo_Screen.svg" style="width:30%;padding:20px;"></img><img src="www/phuse_logo.svg" style="width:30%;padding:20px;"></img></div>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -16,8 +18,26 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-# What you'll Learn
+ 
+### What You'll Learn
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  
+### Instructors
 
-
-# Instructors
-
+<div class="instructors row">
+<div class="instructor col-sm">
+  <img src="www/mike-stackhouse.jpg"></img>
+  **Mike Stackhouse** <br>
+  Cheif Innovation Officer
+</div>
+<div class="instructor col-sm">
+  <img src="www/nathan-kosiba.jpg"></img>
+  **Nathan Kosiba** <br>
+  Software Developer
+</div>
+<div class="instructor col-sm">
+  <img src="www/eli-miller.jpg"></img>
+  **Eli Miller** <br>
+  DevOps Engineer
+</div>
+</div>

@@ -3,32 +3,32 @@
     {
       "path": "index.html",
       "title": "Introduction to R for the Statistical Programmer",
-      "description": "A three hour workshop to get you started using R for all your clinical trial analyses\n",
+      "description": "A three hour workshop to get you started using R for all your clinical trial analyses \n",
       "author": [],
-      "contents": "\nWhat you’ll Learn\nInstructors\n\n\n\n",
-      "last_modified": "2021-05-19T19:21:38+00:00"
+      "contents": "\n\n\nWhat You’ll Learn\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nInstructors\n\n\nMike Stackhouse  Cheif Innovation Officer\n\n\nNathan Kosiba  Software Developer\n\n\nEli Miller  DevOps Engineer\n\n\n\n\n\n",
+      "last_modified": "2021-05-19T21:21:40+00:00"
     },
     {
       "path": "resources.html",
       "title": "Learn More",
       "author": [],
       "contents": "\nWe mentioned a lot of amazing packages within the R ecosystem that we leverage every day. Here’s some documentation that we love and think is a great place to start learning:\nblah\nblah\nblah\n\n\n\n",
-      "last_modified": "2021-05-19T19:21:39+00:00"
+      "last_modified": "2021-05-19T21:21:40+00:00"
     },
     {
       "path": "schedule.html",
       "title": "About this site",
       "description": "Some additional details about the website",
       "author": [],
-      "contents": "\nDay\nTime\nblah\nblah\n\n\n\n",
-      "last_modified": "2021-05-19T19:21:39+00:00"
+      "contents": "\nTime\nConcept\nblah\nblah\nblah\nblah\n\n\n\n",
+      "last_modified": "2021-05-19T21:21:41+00:00"
     },
     {
       "path": "setup.html",
       "title": "Set Up:",
       "author": [],
       "contents": "\nWritten version of starting with RStudio maybe?\nRun this code:\n\n\ninstall.packages()\n\n\n\n\n\n\n",
-      "last_modified": "2021-05-19T19:21:39+00:00"
+      "last_modified": "2021-05-19T21:21:41+00:00"
     }
   ],
   "collections": []
