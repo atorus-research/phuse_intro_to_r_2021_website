@@ -1,12 +1,16 @@
 name: "."
-title: "global-distill"
+title: "Introduction to R for the Statistical Programmer"
 description: |
-  global-distill
+  Introduction to R for the Statistical Programmer
 output_dir: "docs"
 navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
+    - text: "Schedule"
+      href: schedule.html
+    - text: "Setup"
+      href: setup.html
+    - text: "Resources"
+      href: resources.html
 output: distill::distill_article

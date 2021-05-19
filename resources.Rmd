@@ -1,0 +1,9 @@
+---
+title: "Learn More"
+---
+
+We mentioned a lot of amazing packages within the R ecosystem that we leverage every day. Here's some documentation that we love and think is a great place to start learning:
+
+- blah
+- blah 
+- blah

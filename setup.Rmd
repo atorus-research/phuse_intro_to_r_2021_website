@@ -1,0 +1,11 @@
+---
+title: "Set Up:"
+---
+   
+Written version of starting with RStudio maybe?
+   
+Run this code:
+   
+```{r, eval=FALSE}
+install.packages()
+```

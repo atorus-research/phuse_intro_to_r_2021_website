@@ -1,20 +1,34 @@
 {
   "articles": [
     {
-      "path": "about.html",
+      "path": "index.html",
+      "title": "Introduction to R for the Statistical Programmer",
+      "description": "A three hour workshop to get you started using R for all your clinical trial analyses\n",
+      "author": [],
+      "contents": "\nWhat you’ll Learn\nInstructors\n\n\n\n",
+      "last_modified": "2021-05-19T19:21:38+00:00"
+    },
+    {
+      "path": "resources.html",
+      "title": "Learn More",
+      "author": [],
+      "contents": "\nWe mentioned a lot of amazing packages within the R ecosystem that we leverage every day. Here’s some documentation that we love and think is a great place to start learning:\nblah\nblah\nblah\n\n\n\n",
+      "last_modified": "2021-05-19T19:21:39+00:00"
+    },
+    {
+      "path": "schedule.html",
       "title": "About this site",
       "description": "Some additional details about the website",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-05-19T19:07:53+00:00"
+      "contents": "\nDay\nTime\nblah\nblah\n\n\n\n",
+      "last_modified": "2021-05-19T19:21:39+00:00"
     },
     {
-      "path": "index.html",
-      "title": "global-distill",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "path": "setup.html",
+      "title": "Set Up:",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-05-19T19:07:53+00:00"
+      "contents": "\nWritten version of starting with RStudio maybe?\nRun this code:\n\n\ninstall.packages()\n\n\n\n\n\n\n",
+      "last_modified": "2021-05-19T19:21:39+00:00"
     }
   ],
   "collections": []

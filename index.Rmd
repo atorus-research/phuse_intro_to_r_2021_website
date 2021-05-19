@@ -1,7 +1,7 @@
 ---
-title: "global-distill"
+title: "Introduction to R for the Statistical Programmer"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  A three hour workshop to get you started using R for all your clinical trial analyses
 site: distill::distill_website
 ---
 
@@ -15,4 +15,9 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/publish_website.html#github-pages
 
 ```
+
+# What you'll Learn
+
+
+# Instructors
 
