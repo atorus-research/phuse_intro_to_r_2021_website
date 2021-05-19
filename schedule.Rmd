@@ -8,7 +8,12 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-| Time | Concept | 
+| Concept | Time | 
 | --- | --- |
-| blah | blah |
-| blah | blah |
+| 🎬 Getting Started | |
+| 📓 Basics | |
+| ☕ BREAK |
+| 💻 Programming Methods | |
+| ☕ BREAK |
+| 📦 How Can Packages Help? | |
+| 🌐 Where to go from Here | |
