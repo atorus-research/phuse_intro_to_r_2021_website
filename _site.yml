@@ -3,6 +3,7 @@ title: "Introduction to R for the Statistical Programmer"
 description: |
   Introduction to R for the Statistical Programmer
 output_dir: "docs"
+favicon: www/favicon.png
 theme: atorus.css
 navbar:
   right:

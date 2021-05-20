@@ -85,26 +85,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Introduction to R for the Statistical Programmer: Set Up:</title>
+  <title>Introduction to R for the Statistical Programmer: Before We Begin</title>
 
 
+  <link rel="icon" type="image/png" href="www/favicon.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Introduction to R for the Statistical Programmer: Set Up:"/>
+  <meta property="og:title" content="Introduction to R for the Statistical Programmer: Before We Begin"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Introduction to R for the Statistical Programmer"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Introduction to R for the Statistical Programmer: Set Up:"/>
+  <meta property="twitter:title" content="Introduction to R for the Statistical Programmer: Before We Begin"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Set Up:"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Before We Begin"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2185,7 +2186,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:       rgba(255, 255, 255, 0.8);
     --text-size:        15px;
     --hover-color:      white;
-    --bkgd-color:       #0F2E3D;
+        background: linear-gradient( 
+  60deg
+   , rgba(29,37,45,1) 0%, rgba(0,79,91,1) 26%, rgba(0,79,91,1) 40%, rgba(29,37,45,1) 100%) !important;
+  }
+
+  d-article {
+    padding-bottom: 150px;
+  }
+
+  .distill-site-nav.distill-site-footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      margin-top:150px;
   }
 
   /*-- Additional custom styles --*/
@@ -2296,6 +2310,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .instructor {
     width: 30%;
     text-align:center;
+  }
+
+  .foot {
+    color: #86CAC6;
+  }
+
+  .foot svg {
+    color: #86CAC6;
+  }
+
+  svg:hover {
+    fill: white;
+  }
+
+  .foot {
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0px;
+      margin: auto;
   }</style>
   <style type="text/css">
   /* base style */
@@ -2472,7 +2506,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Set Up:","authors":[]}
+{"title":"Before We Begin","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2496,7 +2530,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Set Up:</h1>
+<h1>Before We Begin</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2504,14 +2538,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p>Written version of starting with RStudio maybe?</p>
-<p>Run this code:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
+<h2 id="setup-your-environment">Setup Your Environment</h2>
+<p>We will spend most of our time in this workshop in RStudio Cloud. We recommend the Firefox or Chrome browsers and will use Firefox during the workshop.</p>
+<h2 id="the-cloud">The Cloud</h2>
+<p>During the workshop we will be using RStudio Cloud. The benefit of this is we can all use R with the same configurations, rather than setting up R on each operating system.</p>
+<p>To log into the cloud use this link: www.TODO.com where you should be able to make a copy of the project for yourself.</p>
+<p>TODO: screenshot of this process?</p>
+<h2 id="run-the-sample-code">Run the Sample Code</h2>
+<p>TODO: I’m pretty sure if everyone uses a fork of our cloud project they’ll all have the libraries and stuff they need but maybe we can walk them through running a test file that will fail if they didn’t have the libraries installed/loaded?</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
@@ -2527,7 +2561,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
+<div class="distill-site-nav distill-site-footer">
+<div class="foot">
+<div>© 2021 atorus research</div>
+<div style="width:50px;">
+<a href="" style="width:20px;"><svg fill="#86CAC6" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"/></svg></a>
+</div>
+</div>
+</div>
 <!--/radix_placeholder_navigation_after_body-->
+
 
 </body>
 

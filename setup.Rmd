@@ -1,11 +1,21 @@
 ---
-title: "Set Up:"
+title: "Before We Begin"
 ---
+
+## Setup Your Environment
+
+We will spend most of our time in this workshop in RStudio Cloud. We recommend the Firefox or Chrome browsers and will use Firefox during the workshop.
+
    
-Written version of starting with RStudio maybe?
-   
-Run this code:
-   
-```{r, eval=FALSE}
-install.packages()
-```
+## The Cloud
+
+During the workshop we will be using RStudio Cloud. The benefit of this is we can all use R with the same configurations, rather than setting up R on each operating system.
+
+To log into the cloud use this link: www.TODO.com where you should be able to make a copy of the project for yourself. 
+
+TODO: screenshot of this process?
+
+## Run the Sample Code
+
+TODO: I'm pretty sure if everyone uses a fork of our cloud project they'll all have the libraries and stuff they need but maybe we can walk them through running a test file that will fail if they didn't have the libraries installed/loaded? 
+

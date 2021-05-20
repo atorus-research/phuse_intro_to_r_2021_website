@@ -77,7 +77,20 @@ d-appendix {
   --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        15px;
   --hover-color:      white;
-  --bkgd-color:       #0F2E3D;
+      background: linear-gradient( 
+60deg
+ , rgba(29,37,45,1) 0%, rgba(0,79,91,1) 26%, rgba(0,79,91,1) 40%, rgba(29,37,45,1) 100%) !important;
+}
+
+d-article {
+  padding-bottom: 150px;
+}
+
+.distill-site-nav.distill-site-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top:150px;
 }
 
 /*-- Additional custom styles --*/
@@ -188,4 +201,24 @@ h1, h2, h3, h4 {
 .instructor {
   width: 30%;
   text-align:center;
+}
+
+.foot {
+  color: #86CAC6;
+}
+
+.foot svg {
+  color: #86CAC6;
+}
+
+svg:hover {
+  fill: white;
+}
+
+.foot {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    margin: auto;
 }

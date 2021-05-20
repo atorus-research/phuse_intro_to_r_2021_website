@@ -1,7 +1,7 @@
 ---
-title: "About this site"
+title: "Schedule"
 description: |
-  Some additional details about the website
+  Tentative workflow for today's workshop
 ---
 
 ```{r setup, include=FALSE}

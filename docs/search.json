@@ -6,29 +6,29 @@
       "description": "A three hour workshop to get you started using R for all your clinical trial analyses \n",
       "author": [],
       "contents": "\n\n\nWhat You’ll Learn\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nInstructors\n\n\nMike Stackhouse  Cheif Innovation Officer\n\n\nNathan Kosiba  Software Developer\n\n\nEli Miller  DevOps Engineer\n\n\n\n\n\n",
-      "last_modified": "2021-05-19T21:29:23+00:00"
+      "last_modified": "2021-05-20T13:03:05+00:00"
     },
     {
       "path": "resources.html",
       "title": "Learn More",
       "author": [],
       "contents": "\nWe mentioned a lot of amazing packages within the R ecosystem that we leverage every day. Here’s some documentation that we love and think is a great place to start learning:\nblah\nblah\nblah\n\n\n\n",
-      "last_modified": "2021-05-19T21:29:24+00:00"
+      "last_modified": "2021-05-20T13:03:05+00:00"
     },
     {
       "path": "schedule.html",
-      "title": "About this site",
-      "description": "Some additional details about the website",
+      "title": "Schedule",
+      "description": "Tentative workflow for today's workshop",
       "author": [],
-      "contents": "\nConcept\nTime\n🎬 Getting Started\n\n📓 Basics\nblah\n☕ BREAK\n\n💻 Programming Methods\n\n☕ BREAK\n\n📦 How Can Packages Help?\n\n🌐 Where to go from Here\n\n\n\n\n",
-      "last_modified": "2021-05-19T21:29:24+00:00"
+      "contents": "\nConcept\nTime\n🎬 Getting Started\n\n📓 Basics\n\n☕ BREAK\n\n💻 Programming Methods\n\n☕ BREAK\n\n📦 How Can Packages Help?\n\n🌐 Where to go from Here\n\n\n\n\n",
+      "last_modified": "2021-05-20T13:03:06+00:00"
     },
     {
       "path": "setup.html",
-      "title": "Set Up:",
+      "title": "Before We Begin",
       "author": [],
-      "contents": "\nWritten version of starting with RStudio maybe?\nRun this code:\n\n\ninstall.packages()\n\n\n\n\n\n\n",
-      "last_modified": "2021-05-19T21:29:25+00:00"
+      "contents": "\nSetup Your Environment\nWe will spend most of our time in this workshop in RStudio Cloud. We recommend the Firefox or Chrome browsers and will use Firefox during the workshop.\nThe Cloud\nDuring the workshop we will be using RStudio Cloud. The benefit of this is we can all use R with the same configurations, rather than setting up R on each operating system.\nTo log into the cloud use this link: www.TODO.com where you should be able to make a copy of the project for yourself.\nTODO: screenshot of this process?\nRun the Sample Code\nTODO: I’m pretty sure if everyone uses a fork of our cloud project they’ll all have the libraries and stuff they need but maybe we can walk them through running a test file that will fail if they didn’t have the libraries installed/loaded?\n\n\n\n",
+      "last_modified": "2021-05-20T13:03:06+00:00"
     }
   ],
   "collections": []
