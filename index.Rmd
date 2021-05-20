@@ -1,22 +1,11 @@
 ---
 title: "Introduction to R for the Statistical Programmer"
 description: |
-  A three hour workshop to get you started using R for all your clinical trial analyses 
+  A three hour workshop to get you started using R for all your clinical trial analyses
 site: distill::distill_website
 ---
 
 <div style="display:flex;justify-content:center;"><img src="www/Atorus_Logo_Screen.svg" style="width:30%;padding:20px;"></img><img src="www/phuse_logo.svg" style="width:30%;padding:20px;"></img></div>
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
-
-```
 
  
 ### What You'll Learn
