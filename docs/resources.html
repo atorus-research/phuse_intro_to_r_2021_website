@@ -85,27 +85,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Introduction to R for the Statistical Programmer: Learn More</title>
+  <title>Introduction to R for the Statistical Programmer: Resources</title>
 
 
   <link rel="icon" type="image/png" href="www/favicon.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Introduction to R for the Statistical Programmer: Learn More"/>
+  <meta property="og:title" content="Introduction to R for the Statistical Programmer: Resources"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Introduction to R for the Statistical Programmer"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Introduction to R for the Statistical Programmer: Learn More"/>
+  <meta property="twitter:title" content="Introduction to R for the Statistical Programmer: Resources"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Learn More"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Resources"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2120,7 +2120,45 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Optional: embed custom fonts here with `@import`          */
   /* This must remain at the top of this file.                 */
 
+  .resource {
+    max-width:100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+  }
 
+  .card {
+    color: white;
+    height: 200px;
+    width: 200px;
+  }
+
+  .card:hover {
+      height: 190px;
+      width: 190px;
+      margin: auto;
+  }
+
+  .cards {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+  }
+
+  /* Screen larger than 600px? 2 column */
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  d-article h2 {
+      border-bottom: 1px solid rgba(0, 0, 0, 0);
+  }
 
   html {
     /*-- Main font sizes --*/
@@ -2506,7 +2544,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Learn More","authors":[]}
+{"title":"Resources","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2530,7 +2568,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Learn More</h1>
+<h1>Resources</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2538,12 +2576,45 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p>We mentioned a lot of amazing packages within the R ecosystem that we leverage every day. Here’s some documentation that we love and think is a great place to start learning:</p>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
 <ul>
-<li>blah</li>
-<li>blah</li>
-<li>blah</li>
+<li><a href="#set-aka-bind_rows">set AKA bind_rows</a></li>
+<li><a href="#merge-aka-_join">merge AKA *_join</a></li>
+<li><a href="#learn-more">Learn More</a></li>
 </ul>
+</nav>
+</div>
+<h1 id="set-aka-bind_rows">set AKA bind_rows</h1>
+<p><img alt="two dataframes merged based on column names" src="www/bind_rows.PNG"></img></p>
+<h1 id="merge-aka-_join">merge AKA *_join</h1>
+<p><img alt="venn diagrams of inner join, outer join, left and right join" src="www/join.PNG"></img></p>
+<h1 id="learn-more">Learn More</h1>
+<p>We mentioned a lot of amazing packages within the R ecosystem that we leverage every day. <strong>click on the package photo for more info and documentation</strong></p>
+<div class="cards">
+<div class="card">
+<a href="https://www.tidyverse.org/"> <img class="resource" src="www/tidyverse.png"></img> </a>
+</div>
+<div class="card">
+<a href="https://atorus-research.github.io/Tplyr/"> <img class="resource" src="www/tplyr.png"></img> </a>
+</div>
+<div class="card">
+<a href="https://ggplot2.tidyverse.org/"> <img class="resource" src="www/ggplot2.png"></img> </a>
+</div>
+<div class="card">
+<a href="https://atorus-research.github.io/xportr/"> <img class="resource" src="www/xportr.png"></img> </a>
+</div>
+<div class="card">
+<a href="https://stringr.tidyverse.org/"> <img class="resource" src="www/stringr.png"> </img> </a>
+</div>
+<div class="card">
+<a href="https://lubridate.tidyverse.org/"> <img class="resource" src="www/lubridate.png"></img> </a>
+</div>
+<div class="card">
+<a href="https://clock.r-lib.org/"> <img class="resource" src="www/clock.png"></img> </a>
+</div>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

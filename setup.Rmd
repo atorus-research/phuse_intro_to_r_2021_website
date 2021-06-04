@@ -1,10 +1,11 @@
 ---
-title: "Before We Begin"
+title: "Setup Your Environment"
+description: |
+  We will spend most of our time in this workshop in RStudio Cloud. We recommend the Firefox or Chrome browsers and will use Firefox during the workshop.
+output:
+  distill::distill_article:
+    toc: true
 ---
-
-## Setup Your Environment
-
-We will spend most of our time in this workshop in RStudio Cloud. We recommend the Firefox or Chrome browsers and will use Firefox during the workshop.
 
    
 ## The Cloud

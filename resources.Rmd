@@ -1,9 +1,66 @@
 ---
-title: "Learn More"
+title: "Resources"
+output:
+  distill::distill_article:
+    toc: true
 ---
 
-We mentioned a lot of amazing packages within the R ecosystem that we leverage every day. Here's some documentation that we love and think is a great place to start learning:
+# set AKA bind_rows
 
-- blah
-- blah 
-- blah
+<img alt="two dataframes merged based on column names" src="www/bind_rows.PNG"></img>
+
+# merge AKA *_join
+
+<img alt="venn diagrams of inner join, outer join, left and right join" src="www/join.PNG"></img>
+
+# Learn More
+
+We mentioned a lot of amazing packages within the R ecosystem that we leverage every day. **click on the package photo for more info and documentation**
+
+<div class="cards">
+
+  <div class="card">
+  <a href="https://www.tidyverse.org/">
+  <img class="resource" src="www/tidyverse.png"></img>
+  </a>
+  </div>
+  
+  <div class="card">
+  <a href="https://atorus-research.github.io/Tplyr/">
+  <img class="resource" src="www/tplyr.png"></img>
+  </a>
+  </div>
+  
+  <div class="card">
+  <a href="https://ggplot2.tidyverse.org/">
+  <img class="resource" src="www/ggplot2.png"></img>
+  </a>
+  </div>
+  
+  <div class="card">
+  <a href="https://atorus-research.github.io/xportr/">
+  <img class="resource" src="www/xportr.png"></img>
+  </a>
+  </div>
+  
+  <div class="card">
+  <a href="https://stringr.tidyverse.org/">
+  <img class="resource" src="www/stringr.png">
+  </img>
+  </a>
+  </div>
+  
+  <div class="card">
+  <a href="https://lubridate.tidyverse.org/">
+  <img class="resource" src="www/lubridate.png"></img>
+  </a>
+  </div>
+  
+  <div class="card">
+  <a href="https://clock.r-lib.org/">
+  <img class="resource" src="www/clock.png"></img>
+  </a>
+  </div>
+  
+
+</div>

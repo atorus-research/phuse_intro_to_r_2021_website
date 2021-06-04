@@ -11,7 +11,45 @@
 /* Optional: embed custom fonts here with `@import`          */
 /* This must remain at the top of this file.                 */
 
+.resource {
+  max-width:100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
 
+.card {
+  color: white;
+  height: 200px;
+  width: 200px;
+}
+
+.card:hover {
+    height: 190px;
+    width: 190px;
+    margin: auto;
+}
+
+.cards {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+d-article h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
 
 html {
   /*-- Main font sizes --*/
