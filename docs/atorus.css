@@ -218,7 +218,7 @@ h1, h2, h3, h4 {
 
 .instructors {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 @media and (max-width 450px) {

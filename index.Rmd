@@ -14,7 +14,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ### Instructors
 
 <div class="instructors row">
-<div class="instructor col-sm">
+<div class="instructor col-sm-3">
   <img src="www/mike-stackhouse.jpg"></img>
   **Mike Stackhouse** <br>
   Cheif Innovation Officer
@@ -24,9 +24,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   **Nathan Kosiba** <br>
   Software Developer
 </div>
+</div>
+
+<div class="instructors row">
 <div class="instructor col-sm">
   <img src="www/eli-miller.jpg"></img>
   **Eli Miller** <br>
   DevOps Engineer
+</div>
+<div class="instructor col-sm">
+  <img src="www/maya-gans.png"></img>
+  **Maya Gans** <br>
+  Data Visualization Engineer
 </div>
 </div>
