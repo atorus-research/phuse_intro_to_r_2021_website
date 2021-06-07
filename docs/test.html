@@ -85,27 +85,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Introduction to R for the Statistical Programmer: Resources</title>
+  <title>Introduction to R for the Statistical Programmer: Untitled</title>
 
 
   <link rel="icon" type="image/png" href="www/favicon.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Introduction to R for the Statistical Programmer: Resources"/>
+  <meta property="og:title" content="Introduction to R for the Statistical Programmer: Untitled"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Introduction to R for the Statistical Programmer"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Introduction to R for the Statistical Programmer: Resources"/>
+  <meta property="twitter:title" content="Introduction to R for the Statistical Programmer: Untitled"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Resources"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{},"value":[]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2544,7 +2544,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Resources","authors":[]}
+{"title":"Untitled","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2568,7 +2568,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Resources</h1>
+<h1>test.utf8</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2576,145 +2576,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<div class="d-contents d-contents-float">
-<nav class="l-text toc figcaption" id="TOC">
-<h3>Contents</h3>
-<ul>
-<li><a href="#introduction">Introduction</a>
-<ul>
-<li><a href="#workshop-goals">Workshop Goals</a></li>
-<li><a href="#object-types">Object Types</a></li>
-<li><a href="#operators-in-r">Operators in R</a></li>
-<li><a href="#the-pipe-operator">The Pipe <code>%&gt;%</code> Operator</a></li>
-<li><a href="#what-are-packages">What are packages?</a></li>
-<li><a href="#what-is-the-tidyverse">What is the tidyverse?</a></li>
-</ul></li>
-<li><a href="#working-with-data-frames">Working with Data Frames</a>
-<ul>
-<li><a href="#keepdroprename">Keep/Drop/Rename</a></li>
-<li><a href="#sub-setting-by-rows-where">Sub-setting by rows (<code>where</code>)</a></li>
-<li><a href="#sorting">Sorting</a></li>
-<li><a href="#set-aka-bind_rows">set AKA bind_rows</a></li>
-<li><a href="#merge-aka-_join">merge AKA *_join</a></li>
-<li><a href="#defining-new-variables">Defining New Variables</a></li>
-<li><a href="#summarizing-data">Summarizing Data</a></li>
-</ul></li>
-<li><a href="#where-to-go-from-here">Where to Go From Here:</a></li>
-</ul>
-</nav>
+<h2 id="consider-this-sas-code">Consider this SAS code</h2>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>proc sort data<span class="ot">=</span>dates;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  by usubjid astdt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>run;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>data dates1;</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  set dates;</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  by usubjid astdt;</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> first.usubjid;</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>run;</span></code></pre></div>
 </div>
-<h1 id="introduction">Introduction</h1>
-<h2 id="workshop-goals">Workshop Goals</h2>
-<p>This workshop is not exhaustive but meant to be a first contact with the R programming language. We hope you leave the workshop able to say:</p>
-<blockquote>
-<p>R isn’t scary!</p>
-</blockquote>
-<p>We also hope to show you you can use R to do things with data you’re already familiar with, as well as clinical computations.</p>
-<h2 id="object-types">Object Types</h2>
-<p>Data Frames in R are like Datasets in SAS®</p>
-<p>Data frames are made up of columns called “vectors” – treated like Variables in SAS®</p>
-<p>More data types exist, but we’ll focus on data frames Basic variable types:</p>
-<ul>
-<li>Character (<code>"A"</code>)</li>
-<li>Numeric (<code>100</code>)</li>
-<li>Boolean (<code>TRUE</code>)</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th>Equality</th>
-<th>Type</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>==</td>
-<td>equal to</td>
-<td><code>x == y</code></td>
-</tr>
-<tr class="even">
-<td>!=</td>
-<td>not equal to</td>
-<td><code>x != y</code></td>
-</tr>
-<tr class="odd">
-<td>&lt;</td>
-<td>less than</td>
-<td><code>x &lt; y</code></td>
-</tr>
-<tr class="even">
-<td>&lt;=</td>
-<td>less than or equal to</td>
-<td><code>x &lt;= y</code></td>
-</tr>
-<tr class="odd">
-<td>&gt;</td>
-<td>greater than</td>
-<td><code>x &gt; y</code></td>
-</tr>
-<tr class="even">
-<td>&gt;=</td>
-<td>greater than or equal to</td>
-<td><code>x &gt;= y</code></td>
-</tr>
-<tr class="odd">
-<td><code>|</code></td>
-<td>or</td>
-<td><code>x | y</code></td>
-</tr>
-<tr class="even">
-<td>&amp;</td>
-<td>and</td>
-<td><code>x &amp; y</code></td>
-</tr>
-<tr class="odd">
-<td>!</td>
-<td>not</td>
-<td><code>!x</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="operators-in-r">Operators in R</h2>
-<h2 id="the-pipe-operator">The Pipe <code>%&gt;%</code> Operator</h2>
-<h2 id="what-are-packages">What are packages?</h2>
-<h2 id="what-is-the-tidyverse">What is the tidyverse?</h2>
-<h1 id="working-with-data-frames">Working with Data Frames</h1>
-<h2 id="keepdroprename">Keep/Drop/Rename</h2>
-<h2 id="sub-setting-by-rows-where">Sub-setting by rows (<code>where</code>)</h2>
-<h2 id="sorting">Sorting</h2>
-<h2 id="set-aka-bind_rows">set AKA bind_rows</h2>
-<p><img alt="two dataframes merged based on column names" src="www/bind_rows.PNG"></img></p>
-<h2 id="merge-aka-_join">merge AKA *_join</h2>
-<p><img alt="venn diagrams of inner join, outer join, left and right join" src="www/join.PNG"></img></p>
-<h2 id="defining-new-variables">Defining New Variables</h2>
-<h2 id="summarizing-data">Summarizing Data</h2>
-<h1 id="where-to-go-from-here">Where to Go From Here:</h1>
-<p>We mentioned a lot of amazing packages within the R ecosystem that we leverage every day. <strong>click on the package photo for more info and documentation</strong></p>
-<div class="cards">
-<div class="card">
-<a href="https://www.tidyverse.org/"> <img class="resource" src="www/tidyverse.png"></img> </a>
-</div>
-<div class="card">
-<a href="https://atorus-research.github.io/Tplyr/"> <img class="resource" src="www/tplyr.png"></img> </a>
-</div>
-<div class="card">
-<a href="https://ggplot2.tidyverse.org/"> <img class="resource" src="www/ggplot2.png"></img> </a>
-</div>
-<div class="card">
-<a href="https://atorus-research.github.io/xportr/"> <img class="resource" src="www/xportr.png"></img> </a>
-</div>
-<div class="card">
-<a href="https://stringr.tidyverse.org/"> <img class="resource" src="www/stringr.png"> </img> </a>
-</div>
-<div class="card">
-<a href="https://lubridate.tidyverse.org/"> <img class="resource" src="www/lubridate.png"></img> </a>
-</div>
-<div class="card">
-<a href="https://clock.r-lib.org/"> <img class="resource" src="www/clock.png"></img> </a>
-</div>
-</div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

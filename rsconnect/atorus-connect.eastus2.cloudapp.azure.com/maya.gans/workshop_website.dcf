@@ -1,0 +1,12 @@
+name: workshop_website
+title: workshop_website
+username: maya.gans
+account: maya.gans
+server: atorus-connect.eastus2.cloudapp.azure.com
+hostUrl: https://atorus-connect.eastus2.cloudapp.azure.com/__api__
+appId: 140
+bundleId: 450
+url: https://atorus-connect.eastus2.cloudapp.azure.com:443/content/140/
+when: 1623094481.19872
+asMultiple: FALSE
+asStatic: TRUE

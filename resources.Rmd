@@ -5,15 +5,73 @@ output:
     toc: true
 ---
 
-# set AKA bind_rows
+# Introduction
+
+## Workshop Goals
+
+This workshop is not exhaustive but meant to be a first contact with the R programming language. We hope you leave the workshop able to say:
+
+> R isn't scary!
+
+We also hope to show you you can use R to do things with data you're already familiar with, as well as clinical computations.
+
+## Object Types
+
+Data Frames in R are like Datasets in SAS®
+
+Data frames are made up of columns called "vectors" – treated like Variables in SAS®
+
+
+
+More data types exist, but we'll focus on data frames
+Basic variable types:
+
+- Character (`"A"`)
+- Numeric (`100`)
+- Boolean (`TRUE`)
+
+## Operators in R
+
+| Equality | Type | Example | 
+| --- | --- | --- |
+| == | equal to | `x == y` | 
+| != | not equal to | `x != y` |
+| < | less than | `x < y` | 
+| <= | less than or equal to | `x <= y` |
+| > | greater than | `x > y` |
+| >= | greater than or equal to | `x >= y` |
+| `|` | or | `x | y` |
+| & | and | `x & y` |
+| ! | not | `!x` | 
+
+
+## The Pipe `%>%` Operator
+
+## What are packages?
+
+## What is the tidyverse?
+
+# Working with Data Frames
+
+## Keep/Drop/Rename
+
+## Sub-setting by rows (`where`)
+
+## Sorting
+
+## set AKA bind_rows
 
 <img alt="two dataframes merged based on column names" src="www/bind_rows.PNG"></img>
 
-# merge AKA *_join
+## merge AKA *_join
 
 <img alt="venn diagrams of inner join, outer join, left and right join" src="www/join.PNG"></img>
 
-# Learn More
+## Defining New Variables
+
+## Summarizing Data
+
+# Where to Go From Here:
 
 We mentioned a lot of amazing packages within the R ecosystem that we leverage every day. **click on the package photo for more info and documentation**
 

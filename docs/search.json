@@ -6,14 +6,14 @@
       "description": "A three hour workshop to get you started using R for all your clinical trial analyses\n",
       "author": [],
       "contents": "\n\n\nWhat You’ll Learn\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nInstructors\n\n\nMike Stackhouse  Cheif Innovation Officer\n\n\nNathan Kosiba  Software Developer\n\n\nEli Miller  DevOps Engineer\n\n\n\n\n\n",
-      "last_modified": "2021-06-04T20:19:38+00:00"
+      "last_modified": "2021-06-05T02:04:46+00:00"
     },
     {
       "path": "resources.html",
       "title": "Resources",
       "author": [],
-      "contents": "\n\nContents\nset AKA bind_rows\nmerge AKA *_join\nLearn More\n\nset AKA bind_rows\n\nmerge AKA *_join\n\nLearn More\nWe mentioned a lot of amazing packages within the R ecosystem that we leverage every day. click on the package photo for more info and documentation\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\n",
-      "last_modified": "2021-06-04T20:19:39+00:00"
+      "contents": "\n\nContents\nIntroduction\nWorkshop Goals\nObject Types\nOperators in R\nThe Pipe %>% Operator\nWhat are packages?\nWhat is the tidyverse?\n\nWorking with Data Frames\nKeep/Drop/Rename\nSub-setting by rows (where)\nSorting\nset AKA bind_rows\nmerge AKA *_join\nDefining New Variables\nSummarizing Data\n\nWhere to Go From Here:\n\nIntroduction\nWorkshop Goals\nThis workshop is not exhaustive but meant to be a first contact with the R programming language. We hope you leave the workshop able to say:\n\nR isn’t scary!\n\nWe also hope to show you you can use R to do things with data you’re already familiar with, as well as clinical computations.\nObject Types\nData Frames in R are like Datasets in SAS®\nData frames are made up of columns called “vectors” – treated like Variables in SAS®\nMore data types exist, but we’ll focus on data frames Basic variable types:\nCharacter (\"A\")\nNumeric (100)\nBoolean (TRUE)\nEquality\nType\nExample\n==\nequal to\nx == y\n!=\nnot equal to\nx != y\n<\nless than\nx < y\n<=\nless than or equal to\nx <= y\n>\ngreater than\nx > y\n>=\ngreater than or equal to\nx >= y\n|\nor\nx | y\n&\nand\nx & y\n!\nnot\n!x\nOperators in R\nThe Pipe %>% Operator\nWhat are packages?\nWhat is the tidyverse?\nWorking with Data Frames\nKeep/Drop/Rename\nSub-setting by rows (where)\nSorting\nset AKA bind_rows\n\nmerge AKA *_join\n\nDefining New Variables\nSummarizing Data\nWhere to Go From Here:\nWe mentioned a lot of amazing packages within the R ecosystem that we leverage every day. click on the package photo for more info and documentation\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\n",
+      "last_modified": "2021-06-05T02:04:47+00:00"
     },
     {
       "path": "schedule.html",
@@ -21,7 +21,7 @@
       "description": "Tentative workflow for today's workshop",
       "author": [],
       "contents": "\nConcept\nTime\n🎬 Getting Started\n\n📓 Basics\n\n☕ BREAK\n\n💻 Programming Methods\n\n☕ BREAK\n\n📦 How Can Packages Help?\n\n🌐 Where to go from Here\n\n\n\n\n",
-      "last_modified": "2021-06-04T20:19:39+00:00"
+      "last_modified": "2021-06-05T02:04:47+00:00"
     },
     {
       "path": "setup.html",
@@ -29,7 +29,13 @@
       "description": "We will spend most of our time in this workshop in RStudio Cloud. We recommend the Firefox or Chrome browsers and will use Firefox during the workshop.\n",
       "author": [],
       "contents": "\n\nContents\nThe Cloud\nRun the Sample Code\n\nThe Cloud\nDuring the workshop we will be using RStudio Cloud. The benefit of this is we can all use R with the same configurations, rather than setting up R on each operating system.\nTo log into the cloud use this link: www.TODO.com where you should be able to make a copy of the project for yourself.\nTODO: screenshot of this process?\nRun the Sample Code\nTODO: I’m pretty sure if everyone uses a fork of our cloud project they’ll all have the libraries and stuff they need but maybe we can walk them through running a test file that will fail if they didn’t have the libraries installed/loaded?\n\n\n\n",
-      "last_modified": "2021-06-04T20:19:40+00:00"
+      "last_modified": "2021-06-05T02:04:48+00:00"
+    },
+    {
+      "path": "test.html",
+      "author": [],
+      "contents": "\nConsider this SAS code\n\nproc sort data=dates;\n  by usubjid astdt;\nrun;\n\ndata dates1;\n  set dates;\n  by usubjid astdt;\n  if first.usubjid;\nrun;\n\n\n\n\n",
+      "last_modified": "2021-06-07T19:40:51+00:00"
     }
   ],
   "collections": []
