@@ -32,7 +32,7 @@ Basic variable types:
 
 ## Operators in R
 
-| Equality | Type | Example | 
+| Operator | Meaning | Example | 
 | --- | --- | --- |
 | == | equal to | `x == y` | 
 | != | not equal to | `x != y` |
