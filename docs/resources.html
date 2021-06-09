@@ -2584,7 +2584,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <ul>
 <li><a href="#workshop-goals">Workshop Goals</a></li>
 <li><a href="#object-types">Object Types</a></li>
-<li><a href="#operators-in-r">Operators in R</a></li>
+<li><a href="#assigning-variables">Assigning Variables</a></li>
+<li><a href="#testing-equality">Testing Equality</a></li>
 <li><a href="#the-pipe-operator">The Pipe <code>%&gt;%</code> Operator</a></li>
 <li><a href="#what-are-packages">What are packages?</a></li>
 <li><a href="#what-is-the-tidyverse">What is the tidyverse?</a></li>
@@ -2611,15 +2612,384 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </blockquote>
 <p>We also hope to show you you can use R to do things with data you’re already familiar with, as well as clinical computations.</p>
 <h2 id="object-types">Object Types</h2>
-<p>Data Frames in R are like Datasets in SAS®</p>
-<p>Data frames are made up of columns called “vectors” – treated like Variables in SAS®</p>
-<p>More data types exist, but we’ll focus on data frames Basic variable types:</p>
-<ul>
-<li>Character (<code>"A"</code>)</li>
-<li>Numeric (<code>100</code>)</li>
-<li>Boolean (<code>TRUE</code>)</li>
-</ul>
-<h2 id="operators-in-r">Operators in R</h2>
+<p><span style="background-color:black;color:white;">Data Frames</span> in R are like Datasets in SAS®. Data frames are made up of columns called <code>vectors</code> – treated like Variables in SAS® <em>More data types exist, but we’ll focus on data frames</em></p>
+<div style="text-align:center;">
+<p><strong>Basic Variable Types</strong></p>
+<p><span style="color:#1C6972;">Numeric</span></p>
+<p><span style="color:#FDD26E;">Character</span></p>
+<p><span style="color:#FF7F41;">Boolean</span></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#eqxlaqaylp .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: black;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#eqxlaqaylp .gt_heading {
+  background-color: black;
+  text-align: center;
+  border-bottom-color: black;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#eqxlaqaylp .gt_title {
+  color: #FFFFFF;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: black;
+  border-bottom-width: 0;
+}
+
+#eqxlaqaylp .gt_subtitle {
+  color: #FFFFFF;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: black;
+  border-top-width: 0;
+}
+
+#eqxlaqaylp .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#eqxlaqaylp .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#eqxlaqaylp .gt_col_heading {
+  color: #FFFFFF;
+  background-color: black;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#eqxlaqaylp .gt_column_spanner_outer {
+  color: #FFFFFF;
+  background-color: black;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#eqxlaqaylp .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#eqxlaqaylp .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#eqxlaqaylp .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#eqxlaqaylp .gt_group_heading {
+  padding: 8px;
+  color: #FFFFFF;
+  background-color: black;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#eqxlaqaylp .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #FFFFFF;
+  background-color: black;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#eqxlaqaylp .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#eqxlaqaylp .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#eqxlaqaylp .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#eqxlaqaylp .gt_stub {
+  color: #FFFFFF;
+  background-color: black;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#eqxlaqaylp .gt_summary_row {
+  color: #FFFFFF;
+  background-color: black;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#eqxlaqaylp .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#eqxlaqaylp .gt_grand_summary_row {
+  color: #FFFFFF;
+  background-color: black;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#eqxlaqaylp .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#eqxlaqaylp .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#eqxlaqaylp .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#eqxlaqaylp .gt_footnotes {
+  color: #FFFFFF;
+  background-color: black;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#eqxlaqaylp .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#eqxlaqaylp .gt_sourcenotes {
+  color: #FFFFFF;
+  background-color: black;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#eqxlaqaylp .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#eqxlaqaylp .gt_left {
+  text-align: left;
+}
+
+#eqxlaqaylp .gt_center {
+  text-align: center;
+}
+
+#eqxlaqaylp .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#eqxlaqaylp .gt_font_normal {
+  font-weight: normal;
+}
+
+#eqxlaqaylp .gt_font_bold {
+  font-weight: bold;
+}
+
+#eqxlaqaylp .gt_font_italic {
+  font-style: italic;
+}
+
+#eqxlaqaylp .gt_super {
+  font-size: 65%;
+}
+
+#eqxlaqaylp .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="eqxlaqaylp" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">a</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">b</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">c</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_center" style="background-color: #1C6972;">1</td>
+      <td class="gt_row gt_left" style="background-color: #FDD26E;">a</td>
+      <td class="gt_row gt_center" style="background-color: #FF7F41;">TRUE</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center" style="background-color: #1C6972;">2</td>
+      <td class="gt_row gt_left" style="background-color: #FDD26E;">b</td>
+      <td class="gt_row gt_center" style="background-color: #FF7F41;">TRUE</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center" style="background-color: #1C6972;">3</td>
+      <td class="gt_row gt_left" style="background-color: #FDD26E;">c</td>
+      <td class="gt_row gt_center" style="background-color: #FF7F41;">FALSE</td>
+    </tr>
+  </tbody>
+  
+  
+</table></div>
+</div>
+<h2 id="assigning-variables">Assigning Variables</h2>
+<p><img alt="two r consoles, one assigning x to hello using an arrow, and another using an equal sign" src="www/assignment.PNG"></img></p>
+<p>These two methods yeild the <strong>same results</strong>, but the convention is to use <code>&lt;-</code>. Learn more <a href="https://stat.ethz.ch/R-manual/R-patched/library/base/html/assignOps.html">here</a></p>
+<h2 id="testing-equality">Testing Equality</h2>
 <table>
 <thead>
 <tr class="header">
@@ -2630,53 +3000,85 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </thead>
 <tbody>
 <tr class="odd">
+<td>&lt;-</td>
+<td>assign</td>
+<td><code>x &lt;- y</code></td>
+</tr>
+<tr class="even">
 <td>==</td>
 <td>equal to</td>
 <td><code>x == y</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>!=</td>
 <td>not equal to</td>
 <td><code>x != y</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>&lt;</td>
 <td>less than</td>
 <td><code>x &lt; y</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>&lt;=</td>
 <td>less than or equal to</td>
 <td><code>x &lt;= y</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>&gt;</td>
 <td>greater than</td>
 <td><code>x &gt; y</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>&gt;=</td>
 <td>greater than or equal to</td>
 <td><code>x &gt;= y</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>|</code></td>
 <td>or</td>
 <td><code>x | y</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>&amp;</td>
 <td>and</td>
 <td><code>x &amp; y</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>!</td>
 <td>not</td>
 <td><code>!x</code></td>
 </tr>
+<tr class="odd">
+<td>%in%</td>
+<td>in</td>
+<td><code>x %in% y</code></td>
+</tr>
+<tr class="even">
+<td>+</td>
+<td>add</td>
+<td><code>x + y</code></td>
+</tr>
+<tr class="odd">
+<td>-</td>
+<td>subtract</td>
+<td><code>x - y</code></td>
+</tr>
+<tr class="even">
+<td>%</td>
+<td>divide</td>
+<td><code>x % y</code></td>
+</tr>
+<tr class="odd">
+<td>*</td>
+<td>multiply</td>
+<td><code>x*y</code></td>
+</tr>
 </tbody>
 </table>
 <h2 id="the-pipe-operator">The Pipe <code>%&gt;%</code> Operator</h2>
+<p>The pipe, <code>%&gt;%</code>, is used to create a pipeline of functions and can be read as “and then”</p>
+<p><img alt="tweet showing how to read the pipe as waking up %>% getting dressed" src="www/pipe.png"></img></p>
 <h2 id="what-are-packages">What are packages?</h2>
 <h2 id="what-is-the-tidyverse">What is the tidyverse?</h2>
 <h1 id="working-with-data-frames">Working with Data Frames</h1>

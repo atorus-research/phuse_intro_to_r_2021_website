@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R for the Statistical Programmer"
 description: |
-  A three hour workshop to get you started using R for all your clinical trial analyses
+  A two hour workshop to get you started using R for all your clinical trial analyses
 site: distill::distill_website
 ---
 

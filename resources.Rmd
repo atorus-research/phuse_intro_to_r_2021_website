@@ -17,23 +17,70 @@ We also hope to show you you can use R to do things with data you're already fam
 
 ## Object Types
 
-Data Frames in R are like Datasets in SAS®
 
-Data frames are made up of columns called "vectors" – treated like Variables in SAS®
+<span style="background-color:black;color:white;">Data Frames</span>  in R are like Datasets in SAS®. Data frames are made up of columns called `vectors` – treated like Variables in SAS® *More data types exist, but we'll focus on data frames*
+
+<div style="text-align:center;">
+
+<strong>Basic Variable Types</strong>
+
+
+<span style="color:#1C6972;">Numeric</span>
+
+<span style="color:#FDD26E;">Character</span>
+
+<span style="color:#FF7F41;">Boolean</span>
+
+</div>
+
+```{r, echo=FALSE, warning=FALSE}
+library(magrittr)
+library(gt)
+
+data.frame(
+  a = 1:3,
+  b = letters[1:3],
+  c = c(TRUE, TRUE, FALSE)
+) %>%
+  gt() %>%
+  tab_options(
+    table.background.color = "black",
+    table.width = "100%"
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#1C6972")),
+      locations = cells_body(columns = "a")
+  ) %>%
+    tab_style(
+    style = list(
+      cell_fill(color = "#FDD26E")),
+      locations = cells_body(columns = "b")
+  ) %>%
+    tab_style(
+    style = list(
+      cell_fill(color = "#FF7F41")),
+      locations = cells_body(columns = "c")
+  )
+```
+
+
+## Assigning Variables
 
 
 
-More data types exist, but we'll focus on data frames
-Basic variable types:
 
-- Character (`"A"`)
-- Numeric (`100`)
-- Boolean (`TRUE`)
+<img alt="two r consoles, one assigning x to hello using an arrow, and another using an equal sign" src="www/assignment.PNG"></img>
 
-## Operators in R
+
+
+These two methods yeild the **same results**, but the convention is to use `<-`. Learn more [here](https://stat.ethz.ch/R-manual/R-patched/library/base/html/assignOps.html)
+
+## Testing Equality
 
 | Operator | Meaning | Example | 
 | --- | --- | --- |
+| <- | assign | `x <- y` |
 | == | equal to | `x == y` | 
 | != | not equal to | `x != y` |
 | < | less than | `x < y` | 
@@ -43,9 +90,18 @@ Basic variable types:
 | `|` | or | `x | y` |
 | & | and | `x & y` |
 | ! | not | `!x` | 
+| %in% | in | `x %in% y` |
+| + | add | `x + y` |
+| - | subtract | `x - y` |
+| % | divide | `x % y` |
+| * | multiply | `x*y` |
 
 
 ## The Pipe `%>%` Operator
+
+The pipe, `%>%`, is used to create a pipeline of functions and can be read as "and then"
+
+<img alt="tweet showing how to read the pipe as waking up %>% getting dressed" src="www/pipe.png"></img>
 
 ## What are packages?
 
