@@ -10,6 +10,117 @@
     "has_parameters": false
   },
   "packages": {
+    "MASS": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "MASS",
+        "Priority": "recommended",
+        "Version": "7.3-53.1",
+        "Date": "2021-02-12",
+        "Revision": "$Rev: 3539 $",
+        "Depends": "R (>= 3.1.0), grDevices, graphics, stats, utils",
+        "Imports": "methods",
+        "Suggests": "lattice, nlme, nnet, survival",
+        "Authors@R": "c(person(\"Brian\", \"Ripley\", role = c(\"aut\", \"cre\", \"cph\"),\n                    email = \"ripley@stats.ox.ac.uk\"),\n\t     person(\"Bill\", \"Venables\", role = \"ctb\"),\n\t     person(c(\"Douglas\", \"M.\"), \"Bates\", role = \"ctb\"),\n\t     person(\"Kurt\", \"Hornik\", role = \"trl\",\n                     comment = \"partial port ca 1998\"),\n\t     person(\"Albrecht\", \"Gebhardt\", role = \"trl\",\n                     comment = \"partial port ca 1998\"),\n\t     person(\"David\", \"Firth\", role = \"ctb\"))",
+        "Description": "Functions and datasets to support Venables and Ripley,\n  \"Modern Applied Statistics with S\" (4th edition, 2002).",
+        "Title": "Support Functions and Datasets for Venables and Ripley's MASS",
+        "LazyData": "yes",
+        "ByteCompile": "yes",
+        "License": "GPL-2 | GPL-3",
+        "URL": "http://www.stats.ox.ac.uk/pub/MASS4/",
+        "Contact": "<MASS@stats.ox.ac.uk>",
+        "NeedsCompilation": "yes",
+        "Packaged": "2021-02-12 10:21:32 UTC; ripley",
+        "Author": "Brian Ripley [aut, cre, cph],\n  Bill Venables [ctb],\n  Douglas M. Bates [ctb],\n  Kurt Hornik [trl] (partial port ca 1998),\n  Albrecht Gebhardt [trl] (partial port ca 1998),\n  David Firth [ctb]",
+        "Maintainer": "Brian Ripley <ripley@stats.ox.ac.uk>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-02-12 10:25:50 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-15 10:44:58 UTC; unix"
+      }
+    },
+    "Matrix": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "Matrix",
+        "Version": "1.3-2",
+        "Date": "2021-01-05",
+        "Priority": "recommended",
+        "Title": "Sparse and Dense Matrix Classes and Methods",
+        "Contact": "Doug and Martin <Matrix-authors@R-project.org>",
+        "Maintainer": "Martin Maechler <mmaechler+Matrix@gmail.com>",
+        "Authors@R": "c(person(\"Douglas\",\"Bates\", role=\"aut\")\n , person(\"Martin\",\"Maechler\", role = c(\"aut\",\"cre\"), email=\"mmaechler+Matrix@gmail.com\",\n          comment = c(ORCID = \"0000-0002-8685-9910\"))\n , person(\"Timothy A.\", \"Davis\", role=\"ctb\",\n           comment = c(\"SuiteSparse and 'cs' C libraries, notably CHOLMOD, AMD;\n\t\t       collaborators listed in\n\t\t\tdir(pattern = '^[A-Z]+[.]txt$', full.names=TRUE,\n\t\t\t    system.file('doc', 'SuiteSparse', package='Matrix'))\"))\n , person(\"Jens\", \"Oehlschlägel\", role=\"ctb\", comment=\"initial nearPD()\")\n , person(\"Jason\", \"Riedy\", role=\"ctb\",\n          comment = c(\"condest() and onenormest() for octave\",\n \t  \t      \"Copyright: Regents of the University of California\"))\n , person(\"R Core Team\", role = \"ctb\", comment=\"base R matrix implementation\")\n )",
+        "Description": "A rich hierarchy of matrix classes, including triangular,\n   symmetric, and diagonal matrices, both dense and sparse and with\n   pattern, logical and numeric entries.   Numerous methods for and\n   operations on these matrices, using 'LAPACK' and 'SuiteSparse' libraries.",
+        "Depends": "R (>= 3.6.0)",
+        "Imports": "methods, graphics, grid, stats, utils, lattice",
+        "Suggests": "expm, MASS",
+        "Enhances": "MatrixModels, graph, SparseM, sfsmisc, igraph, maptools, sp,\nspdep",
+        "EnhancesNote": "line 2: for \"Rd xrefs\"",
+        "Encoding": "UTF-8",
+        "LazyData": "no",
+        "LazyDataNote": "not possible, since we use data/*.R *and* our classes",
+        "BuildResaveData": "no",
+        "License": "GPL (>= 2) | file LICENCE",
+        "URL": "http://Matrix.R-forge.R-project.org/",
+        "BugReports": "https://r-forge.r-project.org/tracker/?group_id=61",
+        "NeedsCompilation": "yes",
+        "Packaged": "2021-01-05 17:27:25 UTC; maechler",
+        "Author": "Douglas Bates [aut],\n  Martin Maechler [aut, cre] (<https://orcid.org/0000-0002-8685-9910>),\n  Timothy A. Davis [ctb] (SuiteSparse and 'cs' C libraries, notably\n    CHOLMOD, AMD; collaborators listed in dir(pattern =\n    '^[A-Z]+[.]txt$', full.names=TRUE, system.file('doc',\n    'SuiteSparse', package='Matrix'))),\n  Jens Oehlschlägel [ctb] (initial nearPD()),\n  Jason Riedy [ctb] (condest() and onenormest() for octave, Copyright:\n    Regents of the University of California),\n  R Core Team [ctb] (base R matrix implementation)",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-01-06 17:40:19 UTC",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:50:44 UTC; unix"
+      }
+    },
+    "R6": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "R6",
+        "Title": "Encapsulated Classes with Reference Semantics",
+        "Version": "2.5.0",
+        "Authors@R": "person(\"Winston\", \"Chang\", role = c(\"aut\", \"cre\"), email = \"winston@stdout.org\")",
+        "Description": "Creates classes with reference semantics, similar to R's built-in\n    reference classes. Compared to reference classes, R6 classes are simpler\n    and lighter-weight, and they are not built on S4 classes so they do not\n    require the methods package. These classes allow public and private\n    members, and they support inheritance, even when the classes are defined in\n    different packages.",
+        "Depends": "R (>= 3.0)",
+        "Suggests": "knitr, microbenchmark, pryr, testthat, ggplot2, scales",
+        "License": "MIT + file LICENSE",
+        "URL": "https://r6.r-lib.org, https://github.com/r-lib/R6/",
+        "LazyData": "true",
+        "BugReports": "https://github.com/r-lib/R6/issues",
+        "RoxygenNote": "6.1.1",
+        "NeedsCompilation": "no",
+        "Packaged": "2020-10-28 18:30:05 UTC; winston",
+        "Author": "Winston Chang [aut, cre]",
+        "Maintainer": "Winston Chang <winston@stdout.org>",
+        "Repository": "RSPM",
+        "Date/Publication": "2020-10-28 19:30:02 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; ; 2020-10-29 10:39:14 UTC; unix"
+      }
+    },
+    "RColorBrewer": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "RColorBrewer",
+        "Version": "1.1-2",
+        "Date": "2014-12-07",
+        "Title": "ColorBrewer Palettes",
+        "Authors@R": "c(person(given = \"Erich\", family = \"Neuwirth\", role = c(\"aut\",\n        \"cre\"), email = \"erich.neuwirth@univie.ac.at\"))",
+        "Author": "Erich Neuwirth [aut, cre]",
+        "Maintainer": "Erich Neuwirth <erich.neuwirth@univie.ac.at>",
+        "Depends": "R (>= 2.0.0)",
+        "Description": "Provides color schemes for maps (and other graphics)\n        designed by Cynthia Brewer as described at http://colorbrewer2.org",
+        "License": "Apache License 2.0",
+        "Packaged": "2014-12-06 23:59:42 UTC; neuwirth",
+        "NeedsCompilation": "no",
+        "Repository": "RSPM",
+        "Date/Publication": "2014-12-07 08:28:55",
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.0; ; 2020-05-09 16:11:51 UTC; unix"
+      }
+    },
     "Rcpp": {
       "Source": "CRAN",
       "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
@@ -62,6 +173,32 @@
         "Repository": "RSPM",
         "Date/Publication": "2019-01-13 12:50:03 UTC",
         "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 16:42:57 UTC; unix"
+      }
+    },
+    "backports": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "backports",
+        "Type": "Package",
+        "Title": "Reimplementations of Functions Introduced Since R-3.0.0",
+        "Version": "1.2.1",
+        "Authors@R": "c(\n    person(\"Michel\", \"Lang\", NULL, \"michellang@gmail.com\",\n      role = c(\"cre\", \"aut\"), comment = c(ORCID = \"0000-0001-9754-0393\")),\n    person(\"R Core Team\", role = \"aut\"))",
+        "Maintainer": "Michel Lang <michellang@gmail.com>",
+        "Description": "\n    Functions introduced or changed since R v3.0.0 are re-implemented in this\n    package. The backports are conditionally exported in order to let R resolve\n    the function name to either the implemented backport, or the respective base\n    version, if available. Package developers can make use of new functions or\n    arguments by selectively importing specific backports to\n    support older installations.",
+        "URL": "https://github.com/r-lib/backports",
+        "BugReports": "https://github.com/r-lib/backports/issues",
+        "License": "GPL-2 | GPL-3",
+        "NeedsCompilation": "yes",
+        "ByteCompile": "yes",
+        "Depends": "R (>= 3.0.0)",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.1.1",
+        "Packaged": "2020-12-09 11:51:23 UTC; lang",
+        "Author": "Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>),\n  R Core Team [aut]",
+        "Repository": "RSPM",
+        "Date/Publication": "2020-12-09 14:20:07 UTC",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2020-12-10 17:05:46 UTC; unix"
       }
     },
     "base64enc": {
@@ -137,6 +274,145 @@
         "Repository": "RSPM",
         "Date/Publication": "2021-01-20 18:40:02 UTC",
         "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-01-21 13:26:01 UTC; unix"
+      }
+    },
+    "checkmate": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "checkmate",
+        "Type": "Package",
+        "Title": "Fast and Versatile Argument Checks",
+        "Description": "Tests and assertions to perform frequent argument checks. A\n    substantial part of the package was written in C to minimize any worries\n    about execution time overhead.",
+        "Version": "2.0.0",
+        "Authors@R": "c(\n    person(\"Michel\", \"Lang\", NULL, \"michellang@gmail.com\",\n      role = c(\"cre\", \"aut\"), comment = c(ORCID = \"0000-0001-9754-0393\")),\n    person(\"Bernd\", \"Bischl\", NULL, \"bernd_bischl@gmx.net\", role = \"ctb\")\n    )",
+        "URL": "https://github.com/mllg/checkmate",
+        "URLNote": "https://github.com/mllg/checkmate",
+        "BugReports": "https://github.com/mllg/checkmate/issues",
+        "NeedsCompilation": "yes",
+        "ByteCompile": "yes",
+        "Encoding": "UTF-8",
+        "Depends": "R (>= 3.0.0)",
+        "Imports": "backports (>= 1.1.0), utils",
+        "Suggests": "R6, fastmatch, data.table (>= 1.9.8), devtools, ggplot2,\nknitr, magrittr, microbenchmark, rmarkdown, testthat (>=\n0.11.0), tinytest (>= 1.1.0), tibble",
+        "License": "BSD_3_clause + file LICENSE",
+        "VignetteBuilder": "knitr",
+        "RoxygenNote": "7.0.2",
+        "Collate": "'AssertCollection.R' 'allMissing.R' 'anyInfinite.R'\n'anyMissing.R' 'anyNaN.R' 'asInteger.R' 'assert.R' 'helper.R'\n'makeExpectation.R' 'makeTest.R' 'makeAssertion.R'\n'checkAccess.R' 'checkArray.R' 'checkAtomic.R'\n'checkAtomicVector.R' 'checkCharacter.R' 'checkChoice.R'\n'checkClass.R' 'checkComplex.R' 'checkCount.R'\n'checkDataFrame.R' 'checkDataTable.R' 'checkDate.R'\n'checkDirectoryExists.R' 'checkDisjunct.R' 'checkDouble.R'\n'checkEnvironment.R' 'checkFALSE.R' 'checkFactor.R'\n'checkFileExists.R' 'checkFlag.R' 'checkFormula.R'\n'checkFunction.R' 'checkInt.R' 'checkInteger.R'\n'checkIntegerish.R' 'checkList.R' 'checkLogical.R'\n'checkMatrix.R' 'checkMultiClass.R' 'checkNamed.R'\n'checkNames.R' 'checkNull.R' 'checkNumber.R' 'checkNumeric.R'\n'checkOS.R' 'checkPOSIXct.R' 'checkPathForOutput.R' 'checkR6.R'\n'checkRaw.R' 'checkScalar.R' 'checkScalarNA.R'\n'checkSetEqual.R' 'checkString.R' 'checkSubset.R' 'checkTRUE.R'\n'checkTibble.R' 'checkVector.R' 'coalesce.R' 'isIntegerish.R'\n'matchArg.R' 'qassert.R' 'qassertr.R' 'vname.R' 'wfwl.R'\n'zzz.R'",
+        "Packaged": "2020-02-05 12:51:29 UTC; michel",
+        "Author": "Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>),\n  Bernd Bischl [ctb]",
+        "Maintainer": "Michel Lang <michellang@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2020-02-06 01:00:13 UTC",
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 16:10:47 UTC; unix"
+      }
+    },
+    "cli": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "cli",
+        "Title": "Helpers for Developing Command Line Interfaces",
+        "Version": "2.4.0",
+        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", role = c(\"ctb\")),\n    person(\"Kirill\", \"Müller\", role = c(\"ctb\")),\n    person(\"RStudio\", role = \"cph\")\n    )",
+        "Description": "A suite of tools to build attractive command line interfaces\n    ('CLIs'), from semantic elements: headings, lists, alerts, paragraphs,\n    etc. Supports custom themes via a 'CSS'-like language. It also contains a\n    number of lower level 'CLI' elements: rules, boxes, trees, and\n    'Unicode' symbols with 'ASCII' alternatives. It support ANSI colors and\n    text styles as well.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/r-lib/cli#readme",
+        "BugReports": "https://github.com/r-lib/cli/issues",
+        "RoxygenNote": "7.1.1.9001",
+        "Depends": "R (>= 2.10)",
+        "Imports": "glue, methods, utils",
+        "Suggests": "callr, covr, grDevices, htmlwidgets, knitr, mockery, ps (>=\n1.3.4.9000), rmarkdown, rstudioapi, prettycode (>= 1.1.0),\ntestthat, withr",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "NeedsCompilation": "no",
+        "Packaged": "2021-04-04 13:22:00 UTC; gaborcsardi",
+        "Author": "Gábor Csárdi [aut, cre],\n  Hadley Wickham [ctb],\n  Kirill Müller [ctb],\n  RStudio [cph]",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-04-05 14:20:11 UTC",
+        "Built": "R 4.0.4; ; 2021-04-06 10:42:53 UTC; unix"
+      }
+    },
+    "colorspace": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "colorspace",
+        "Version": "2.0-0",
+        "Date": "2020-11-05",
+        "Title": "A Toolbox for Manipulating and Assessing Colors and Palettes",
+        "Authors@R": "c(person(given = \"Ross\", family = \"Ihaka\", role = \"aut\", email = \"ihaka@stat.auckland.ac.nz\"),\n             person(given = \"Paul\", family = \"Murrell\", role = \"aut\", email = \"paul@stat.auckland.ac.nz\",\n                    comment = c(ORCID = \"0000-0002-3224-8858\")),\n             person(given = \"Kurt\", family = \"Hornik\", role = \"aut\", email = \"Kurt.Hornik@R-project.org\",\n\t\t    comment = c(ORCID = \"0000-0003-4198-9911\")),\n             person(given = c(\"Jason\", \"C.\"), family = \"Fisher\", role = \"aut\", email = \"jfisher@usgs.gov\",\n                    comment = c(ORCID = \"0000-0001-9032-8912\")),\n             person(given = \"Reto\", family = \"Stauffer\", role = \"aut\", email = \"Reto.Stauffer@uibk.ac.at\",\n                    comment = c(ORCID = \"0000-0002-3798-5507\")),\n             person(given = c(\"Claus\", \"O.\"), family = \"Wilke\", role = \"aut\", email = \"wilke@austin.utexas.edu\",\n                    comment = c(ORCID = \"0000-0002-7470-9261\")),\n             person(given = c(\"Claire\", \"D.\"), family = \"McWhite\", role = \"aut\", email = \"claire.mcwhite@utmail.utexas.edu\",\n                    comment = c(ORCID = \"0000-0001-7346-3047\")),\n             person(given = \"Achim\", family = \"Zeileis\", role = c(\"aut\", \"cre\"), email = \"Achim.Zeileis@R-project.org\",\n                    comment = c(ORCID = \"0000-0003-0918-3766\")))",
+        "Description": "Carries out mapping between assorted color spaces including RGB, HSV, HLS,\n             CIEXYZ, CIELUV, HCL (polar CIELUV), CIELAB, and polar CIELAB.\n\t     Qualitative, sequential, and diverging color palettes based on HCL colors\n\t     are provided along with corresponding ggplot2 color scales.\n\t     Color palette choice is aided by an interactive app (with either a Tcl/Tk\n\t     or a shiny graphical user interface) and shiny apps with an HCL color picker and a\n\t     color vision deficiency emulator. Plotting functions for displaying\n\t     and assessing palettes include color swatches, visualizations of the\n\t     HCL space, and trajectories in HCL and/or RGB spectrum. Color manipulation\n\t     functions include: desaturation, lightening/darkening, mixing, and\n\t     simulation of color vision deficiencies (deutanomaly, protanomaly, tritanomaly).\n\t     Details can be found on the project web page at <http://colorspace.R-Forge.R-project.org/>\n\t     and in the accompanying scientific paper: Zeileis et al. (2020, Journal of Statistical\n\t     Software, <doi:10.18637/jss.v096.i01>).",
+        "Depends": "R (>= 3.0.0), methods",
+        "Imports": "graphics, grDevices, stats",
+        "Suggests": "datasets, utils, KernSmooth, MASS, kernlab, mvtnorm, vcd,\ntcltk, shiny, shinyjs, ggplot2, dplyr, scales, grid, png, jpeg,\nknitr, rmarkdown, RColorBrewer, rcartocolor, scico, viridis,\nwesanderson",
+        "VignetteBuilder": "knitr",
+        "License": "BSD_3_clause + file LICENSE",
+        "URL": "http://colorspace.R-Forge.R-project.org, http://hclwizard.org/",
+        "BugReports": "http://colorspace.R-Forge.R-project.org/contact.html",
+        "LazyData": "yes",
+        "RoxygenNote": "7.1.1",
+        "NeedsCompilation": "yes",
+        "Packaged": "2020-11-10 01:04:46 UTC; zeileis",
+        "Author": "Ross Ihaka [aut],\n  Paul Murrell [aut] (<https://orcid.org/0000-0002-3224-8858>),\n  Kurt Hornik [aut] (<https://orcid.org/0000-0003-4198-9911>),\n  Jason C. Fisher [aut] (<https://orcid.org/0000-0001-9032-8912>),\n  Reto Stauffer [aut] (<https://orcid.org/0000-0002-3798-5507>),\n  Claus O. Wilke [aut] (<https://orcid.org/0000-0002-7470-9261>),\n  Claire D. McWhite [aut] (<https://orcid.org/0000-0001-7346-3047>),\n  Achim Zeileis [aut, cre] (<https://orcid.org/0000-0003-0918-3766>)",
+        "Maintainer": "Achim Zeileis <Achim.Zeileis@R-project.org>",
+        "Repository": "RSPM",
+        "Date/Publication": "2020-11-11 07:40:15 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2020-11-12 10:37:38 UTC; unix"
+      }
+    },
+    "commonmark": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "commonmark",
+        "Type": "Package",
+        "Title": "High Performance CommonMark and Github Markdown Rendering in R",
+        "Version": "1.7",
+        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", ,\"jeroen@berkeley.edu\", role = c(\"aut\", \"cre\")),\n    person(\"John MacFarlane\", role = \"cph\", comment = \"Author of cmark\"))",
+        "URL": "http://github.com/jeroen/commonmark (devel)\nhttps://github.github.com/gfm/ (spec)",
+        "BugReports": "http://github.com/jeroen/commonmark/issues",
+        "Description": "The CommonMark specification defines a rationalized version of markdown\n    syntax. This package uses the 'cmark' reference implementation for converting\n    markdown text into various formats including html, latex and groff man. In\n    addition it exposes the markdown parse tree in xml format. Also includes opt-in\n    support for GFM extensions including tables, autolinks, and strikethrough text.",
+        "License": "BSD_2_clause + file LICENSE",
+        "Suggests": "curl, testthat, xml2",
+        "RoxygenNote": "6.0.1",
+        "NeedsCompilation": "yes",
+        "Packaged": "2018-12-01 11:57:14 UTC; jeroen",
+        "Author": "Jeroen Ooms [aut, cre],\n  John MacFarlane [cph] (Author of cmark)",
+        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
+        "Repository": "RSPM",
+        "Date/Publication": "2018-12-01 12:30:03 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 16:09:29 UTC; unix"
+      }
+    },
+    "crayon": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "crayon",
+        "Title": "Colored Terminal Output",
+        "Version": "1.4.1",
+        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\",\n    role = c(\"aut\", \"cre\")),\n    person(\n    \"Brodie\", \"Gaslam\", email=\"brodie.gaslam@yahoo.com\",\n    role=c(\"ctb\"))\n    )",
+        "Description": "Colored terminal output on terminals that support 'ANSI'\n    color and highlight codes. It also works in 'Emacs' 'ESS'. 'ANSI'\n    color support is automatically detected. Colors and highlighting can\n    be combined and nested. New styles can also be created easily.\n    This package was inspired by the 'chalk' 'JavaScript' project.",
+        "License": "MIT + file LICENSE",
+        "LazyData": "true",
+        "URL": "https://github.com/r-lib/crayon#readme",
+        "BugReports": "https://github.com/r-lib/crayon/issues",
+        "Collate": "'aaa-rstudio-detect.R' 'aab-num-ansi-colors.R' 'ansi-256.r'\n'combine.r' 'string.r' 'utils.r' 'crayon-package.r'\n'disposable.r' 'has_ansi.r' 'has_color.r' 'link.R' 'styles.r'\n'machinery.r' 'parts.r' 'print.r' 'rematch2.R' 'style-var.r'\n'show.r' 'string_operations.r'",
+        "Imports": "grDevices, methods, utils",
+        "Suggests": "mockery, rstudioapi, testthat, withr",
+        "RoxygenNote": "7.1.1",
+        "Encoding": "UTF-8",
+        "NeedsCompilation": "no",
+        "Packaged": "2021-02-08 18:57:04 UTC; gaborcsardi",
+        "Author": "Gábor Csárdi [aut, cre],\n  Brodie Gaslam [ctb]",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-02-08 19:50:02 UTC",
+        "Built": "R 4.0.3; ; 2021-02-09 10:44:07 UTC; unix"
       }
     },
     "digest": {
@@ -222,6 +498,36 @@
         "Built": "R 4.0.3; ; 2020-11-05 10:42:08 UTC; unix"
       }
     },
+    "dplyr": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Type": "Package",
+        "Package": "dplyr",
+        "Title": "A Grammar of Data Manipulation",
+        "Version": "1.0.5",
+        "Authors@R": "\n    c(person(given = \"Hadley\",\n             family = \"Wickham\",\n             role = c(\"aut\", \"cre\"),\n             email = \"hadley@rstudio.com\",\n             comment = c(ORCID = \"0000-0003-4757-117X\")),\n      person(given = \"Romain\",\n             family = \"François\",\n             role = \"aut\",\n             comment = c(ORCID = \"0000-0002-2444-4226\")),\n      person(given = \"Lionel\",\n             family = \"Henry\",\n             role = \"aut\"),\n      person(given = \"Kirill\",\n             family = \"Müller\",\n             role = \"aut\",\n             comment = c(ORCID = \"0000-0002-1416-3412\")),\n      person(given = \"RStudio\",\n             role = c(\"cph\", \"fnd\")))",
+        "Description": "A fast, consistent tool for working with data frame\n    like objects, both in memory and out of memory.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://dplyr.tidyverse.org, https://github.com/tidyverse/dplyr",
+        "BugReports": "https://github.com/tidyverse/dplyr/issues",
+        "Depends": "R (>= 3.3.0)",
+        "Imports": "ellipsis, generics, glue (>= 1.3.2), lifecycle (>= 1.0.0),\nmagrittr (>= 1.5), methods, R6, rlang (>= 0.4.10), tibble (>=\n2.1.3), tidyselect (>= 1.1.0), utils, vctrs (>= 0.3.5)",
+        "Suggests": "bench, broom, callr, covr, DBI, dbplyr (>= 1.4.3), knitr,\nLahman, lobstr, microbenchmark, nycflights13, purrr, rmarkdown,\nRMySQL, RPostgreSQL, RSQLite, testthat (>= 3.0.2), tidyr, withr",
+        "VignetteBuilder": "knitr",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "RoxygenNote": "7.1.1",
+        "Config/testthat/edition": "3",
+        "NeedsCompilation": "yes",
+        "Packaged": "2021-02-19 10:54:12 UTC; romainfrancois",
+        "Author": "Hadley Wickham [aut, cre] (<https://orcid.org/0000-0003-4757-117X>),\n  Romain François [aut] (<https://orcid.org/0000-0002-2444-4226>),\n  Lionel Henry [aut],\n  Kirill Müller [aut] (<https://orcid.org/0000-0002-1416-3412>),\n  RStudio [cph, fnd]",
+        "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-03-05 11:00:02 UTC",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-03-08 11:05:18 UTC; unix"
+      }
+    },
     "ellipsis": {
       "Source": "CRAN",
       "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
@@ -304,6 +610,64 @@
         "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-01-19 04:08:23 UTC; unix"
       }
     },
+    "farver": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "farver",
+        "Type": "Package",
+        "Title": "High Performance Colour Space Manipulation",
+        "Version": "2.1.0",
+        "Authors@R": "\n    c(person(given = \"Thomas Lin\",\n             family = \"Pedersen\",\n             role = c(\"cre\", \"aut\"),\n             email = \"thomasp85@gmail.com\",\n             comment = c(ORCID = \"0000-0002-5147-4711\")),\n      person(given = \"Berendea\",\n             family = \"Nicolae\",\n             role = \"aut\",\n             comment = \"Author of the ColorSpace C++ library\"),\n      person(given = \"Romain\", \n             family = \"François\", \n             role = \"aut\", \n             email = \"romain@purrple.cat\",\n             comment = c(ORCID = \"0000-0002-2444-4226\")) \n      )",
+        "Maintainer": "Thomas Lin Pedersen <thomasp85@gmail.com>",
+        "Description": "The encoding of colour can be handled in many different ways, using\n    different colour spaces. As different colour spaces have different uses,\n    efficient conversion between these representations are important. The \n    'farver' package provides a set of functions that gives access to very fast\n    colour space conversion and comparisons implemented in C++, and offers \n    speed improvements over the 'convertColor' function in the 'grDevices' \n    package.",
+        "License": "MIT + file LICENSE",
+        "Encoding": "UTF-8",
+        "SystemRequirements": "C++11",
+        "RoxygenNote": "7.1.1",
+        "URL": "https://farver.data-imaginist.com,\nhttps://github.com/thomasp85/farver",
+        "BugReports": "https://github.com/thomasp85/farver/issues",
+        "Suggests": "testthat (>= 2.1.0), covr",
+        "NeedsCompilation": "yes",
+        "Packaged": "2021-02-28 19:00:15 UTC; thomas",
+        "Author": "Thomas Lin Pedersen [cre, aut]\n    (<https://orcid.org/0000-0002-5147-4711>),\n  Berendea Nicolae [aut] (Author of the ColorSpace C++ library),\n  Romain François [aut] (<https://orcid.org/0000-0002-2444-4226>)",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-02-28 19:30:02 UTC",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-03-01 10:49:32 UTC; unix"
+      }
+    },
+    "fs": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "fs",
+        "Title": "Cross-Platform File System Operations Based on 'libuv'",
+        "Version": "1.5.0",
+        "Authors@R": "c(\n    person(\"Jim\", \"Hester\", email = \"james.f.hester@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", \"aut\"),\n    person(\"libuv project contributors\", role = \"cph\", comment = \"libuv library\"),\n    person(\"Joyent, Inc. and other Node contributors\", role = \"cph\", comment = \"libuv library\"),\n    person(\"RStudio\", role = c(\"cph\", \"fnd\"))\n    )",
+        "Description": "A cross-platform interface to file system operations, built on\n  top of the 'libuv' C library.",
+        "Depends": "R (>= 3.1)",
+        "License": "GPL-3",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "ByteCompile": "true",
+        "Imports": "methods",
+        "SystemRequirements": "GNU make",
+        "RoxygenNote": "7.1.1",
+        "URL": "http://fs.r-lib.org, https://github.com/r-lib/fs",
+        "BugReports": "https://github.com/r-lib/fs/issues",
+        "Copyright": "file COPYRIGHTS",
+        "Suggests": "testthat, covr, pillar (>= 1.0.0), tibble (>= 1.1.0), crayon,\nrmarkdown, knitr, withr, spelling, vctrs (>= 0.3.0)",
+        "VignetteBuilder": "knitr",
+        "Language": "en-US",
+        "NeedsCompilation": "yes",
+        "Packaged": "2020-07-31 21:00:55 UTC; jhester",
+        "Author": "Jim Hester [aut, cre],\n  Hadley Wickham [aut],\n  libuv project contributors [cph] (libuv library),\n  Joyent, Inc. and other Node contributors [cph] (libuv library),\n  RStudio [cph, fnd]",
+        "Maintainer": "Jim Hester <james.f.hester@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2020-07-31 21:30:03 UTC",
+        "Built": "R 4.0.2; x86_64-pc-linux-gnu; 2020-08-03 13:58:29 UTC; unix"
+      }
+    },
     "generics": {
       "Source": "CRAN",
       "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
@@ -329,6 +693,36 @@
         "Repository": "RSPM",
         "Date/Publication": "2020-10-31 06:10:15 UTC",
         "Built": "R 4.0.3; ; 2020-11-02 10:47:34 UTC; unix"
+      }
+    },
+    "ggplot2": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "ggplot2",
+        "Version": "3.3.3",
+        "Title": "Create Elegant Data Visualisations Using the Grammar of Graphics",
+        "Description": "A system for 'declaratively' creating graphics,\n    based on \"The Grammar of Graphics\". You provide the data, tell 'ggplot2'\n    how to map variables to aesthetics, what graphical primitives to use,\n    and it takes care of the details.",
+        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", \"aut\",\n           comment = c(ORCID = \"0000-0003-4757-117X\")),\n    person(\"Winston\", \"Chang\", , role = \"aut\",\n           comment = c(ORCID = \"0000-0002-1576-2126\")),\n    person(\"Lionel\", \"Henry\", , role = \"aut\"),\n    person(\"Thomas Lin\", \"Pedersen\", , \"thomas.pedersen@rstudio.com\", \n           role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-5147-4711\")),\n    person(\"Kohske\", \"Takahashi\", role = \"aut\"),\n    person(\"Claus\", \"Wilke\", role = \"aut\",\n           comment = c(ORCID = \"0000-0002-7470-9261\")),\n    person(\"Kara\", \"Woo\", role = \"aut\",\n           comment = c(ORCID = \"0000-0002-5125-4188\")),\n    person(\"Hiroaki\", \"Yutani\", role = \"aut\",\n           comment = c(ORCID = \"0000-0002-3385-7233\")),\n    person(\"Dewey\", \"Dunnington\", role = \"aut\",\n           comment = c(ORCID = \"0000-0002-9415-4582\")),\n    person(\"RStudio\", role = c(\"cph\", \"fnd\"))\n    )",
+        "Depends": "R (>= 3.2)",
+        "Imports": "digest, glue, grDevices, grid, gtable (>= 0.1.1), isoband,\nMASS, mgcv, rlang (>= 0.3.0), scales (>= 0.5.0), stats, tibble,\nwithr (>= 2.0.0)",
+        "Suggests": "covr, dplyr, ggplot2movies, hexbin, Hmisc, knitr, lattice,\nmapproj, maps, maptools, multcomp, munsell, nlme, profvis,\nquantreg, RColorBrewer, rgeos, rmarkdown, rpart, sf (>= 0.7-3),\nsvglite (>= 1.2.0.9001), testthat (>= 2.1.0), vdiffr (>= 0.3.0)",
+        "Enhances": "sp",
+        "License": "MIT + file LICENSE",
+        "URL": "https://ggplot2.tidyverse.org,\nhttps://github.com/tidyverse/ggplot2",
+        "BugReports": "https://github.com/tidyverse/ggplot2/issues",
+        "LazyData": "true",
+        "Collate": "'ggproto.r' 'ggplot-global.R' 'aaa-.r'\n'aes-colour-fill-alpha.r' 'aes-evaluation.r'\n'aes-group-order.r' 'aes-linetype-size-shape.r'\n'aes-position.r' 'compat-plyr.R' 'utilities.r' 'aes.r'\n'legend-draw.r' 'geom-.r' 'annotation-custom.r'\n'annotation-logticks.r' 'geom-polygon.r' 'geom-map.r'\n'annotation-map.r' 'geom-raster.r' 'annotation-raster.r'\n'annotation.r' 'autolayer.r' 'autoplot.r' 'axis-secondary.R'\n'backports.R' 'bench.r' 'bin.R' 'coord-.r' 'coord-cartesian-.r'\n'coord-fixed.r' 'coord-flip.r' 'coord-map.r' 'coord-munch.r'\n'coord-polar.r' 'coord-quickmap.R' 'coord-sf.R'\n'coord-transform.r' 'data.R' 'facet-.r' 'facet-grid-.r'\n'facet-null.r' 'facet-wrap.r' 'fortify-lm.r' 'fortify-map.r'\n'fortify-multcomp.r' 'fortify-spatial.r' 'fortify.r' 'stat-.r'\n'geom-abline.r' 'geom-rect.r' 'geom-bar.r' 'geom-bin2d.r'\n'geom-blank.r' 'geom-boxplot.r' 'geom-col.r' 'geom-path.r'\n'geom-contour.r' 'geom-count.r' 'geom-crossbar.r'\n'geom-segment.r' 'geom-curve.r' 'geom-defaults.r'\n'geom-ribbon.r' 'geom-density.r' 'geom-density2d.r'\n'geom-dotplot.r' 'geom-errorbar.r' 'geom-errorbarh.r'\n'geom-freqpoly.r' 'geom-function.R' 'geom-hex.r'\n'geom-histogram.r' 'geom-hline.r' 'geom-jitter.r'\n'geom-label.R' 'geom-linerange.r' 'geom-point.r'\n'geom-pointrange.r' 'geom-quantile.r' 'geom-rug.r' 'geom-sf.R'\n'geom-smooth.r' 'geom-spoke.r' 'geom-text.r' 'geom-tile.r'\n'geom-violin.r' 'geom-vline.r' 'ggplot2.r' 'grob-absolute.r'\n'grob-dotstack.r' 'grob-null.r' 'grouping.r' 'guide-bins.R'\n'guide-colorbar.r' 'guide-colorsteps.R' 'guide-legend.r'\n'guides-.r' 'guides-axis.r' 'guides-grid.r' 'guides-none.r'\n'hexbin.R' 'labeller.r' 'labels.r' 'layer.r' 'layer-sf.R'\n'layout.R' 'limits.r' 'margins.R' 'performance.R'\n'plot-build.r' 'plot-construction.r' 'plot-last.r' 'plot.r'\n'position-.r' 'position-collide.r' 'position-dodge.r'\n'position-dodge2.r' 'position-identity.r' 'position-jitter.r'\n'position-jitterdodge.R' 'position-nudge.R' 'position-stack.r'\n'quick-plot.r' 'range.r' 'reshape-add-margins.R' 'save.r'\n'scale-.r' 'scale-alpha.r' 'scale-binned.R' 'scale-brewer.r'\n'scale-colour.r' 'scale-continuous.r' 'scale-date.r'\n'scale-discrete-.r' 'scale-expansion.r' 'scale-gradient.r'\n'scale-grey.r' 'scale-hue.r' 'scale-identity.r'\n'scale-linetype.r' 'scale-manual.r' 'scale-shape.r'\n'scale-size.r' 'scale-steps.R' 'scale-type.R' 'scale-view.r'\n'scale-viridis.r' 'scales-.r' 'stat-bin.r' 'stat-bin2d.r'\n'stat-bindot.r' 'stat-binhex.r' 'stat-boxplot.r'\n'stat-contour.r' 'stat-count.r' 'stat-density-2d.r'\n'stat-density.r' 'stat-ecdf.r' 'stat-ellipse.R'\n'stat-function.r' 'stat-identity.r' 'stat-qq-line.R'\n'stat-qq.r' 'stat-quantile.r' 'stat-sf-coordinates.R'\n'stat-sf.R' 'stat-smooth-methods.r' 'stat-smooth.r'\n'stat-sum.r' 'stat-summary-2d.r' 'stat-summary-bin.R'\n'stat-summary-hex.r' 'stat-summary.r' 'stat-unique.r'\n'stat-ydensity.r' 'summarise-plot.R' 'summary.r'\n'theme-elements.r' 'theme.r' 'theme-defaults.r'\n'theme-current.R' 'translate-qplot-ggplot.r'\n'translate-qplot-lattice.r' 'utilities-break.r'\n'utilities-grid.r' 'utilities-help.r' 'utilities-matrix.r'\n'utilities-resolution.r' 'utilities-table.r'\n'utilities-tidy-eval.R' 'zxx.r' 'zzz.r'",
+        "VignetteBuilder": "knitr",
+        "RoxygenNote": "7.1.1",
+        "Encoding": "UTF-8",
+        "NeedsCompilation": "no",
+        "Packaged": "2020-12-17 12:32:40 UTC; thomas",
+        "Author": "Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>),\n  Winston Chang [aut] (<https://orcid.org/0000-0002-1576-2126>),\n  Lionel Henry [aut],\n  Thomas Lin Pedersen [aut, cre]\n    (<https://orcid.org/0000-0002-5147-4711>),\n  Kohske Takahashi [aut],\n  Claus Wilke [aut] (<https://orcid.org/0000-0002-7470-9261>),\n  Kara Woo [aut] (<https://orcid.org/0000-0002-5125-4188>),\n  Hiroaki Yutani [aut] (<https://orcid.org/0000-0002-3385-7233>),\n  Dewey Dunnington [aut] (<https://orcid.org/0000-0002-9415-4582>),\n  RStudio [cph, fnd]",
+        "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@rstudio.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2020-12-30 15:30:02 UTC",
+        "Built": "R 4.0.3; ; 2020-12-31 10:36:47 UTC; unix"
       }
     },
     "glue": {
@@ -358,6 +752,64 @@
         "Repository": "CRAN",
         "Date/Publication": "2020-08-27 13:50:06 UTC",
         "Built": "R 4.0.2; x86_64-pc-linux-gnu; 2020-11-06 19:01:21 UTC; unix"
+      }
+    },
+    "gt": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Type": "Package",
+        "Package": "gt",
+        "Version": "0.2.2",
+        "Title": "Easily Create Presentation-Ready Display Tables",
+        "Description": "Build display tables from tabular data with an easy-to-use set of\n    functions. With its progressive approach, we can construct display tables\n    with a cohesive set of table parts. Table values can be formatted using any\n    of the included formatting functions. Footnotes and cell styles can be \n    precisely added through a location targeting system. The way in which 'gt'\n    handles things for you means that you don't often have to worry about the\n    fine details.",
+        "Authors@R": "c(\n    person(\"Richard\", \"Iannone\", , \"rich@rstudio.com\", c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0003-3925-190X\")),\n    person(\"Joe\", \"Cheng\", , \"joe@rstudio.com\", \"aut\"),\n    person(\"Barret\", \"Schloerke\", , \"barret@rstudio.com\", \"aut\",\n           comment = c(ORCID = \"0000-0001-9986-114X\")),\n    person(\"RStudio\", role = c(\"cph\", \"fnd\"))\n    )",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/rstudio/gt",
+        "BugReports": "https://github.com/rstudio/gt/issues",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "ByteCompile": "true",
+        "RoxygenNote": "7.1.1",
+        "Depends": "R (>= 3.2.0)",
+        "Imports": "checkmate (>= 2.0.0), commonmark (>= 1.7), dplyr (>= 0.8.5),\nfs (>= 1.3.2), ggplot2 (>= 3.3.0), glue (>= 1.3.2), htmltools\n(>= 0.5.0), magrittr (>= 1.5), rlang (>= 0.4.5), sass (>=\n0.1.1), scales (>= 1.1.0), stringr (>= 1.3.1), tibble (>=\n3.0.0), tidyselect (>= 1.0.0)",
+        "Suggests": "covr, knitr, paletteer, testthat (>= 2.1.0), RColorBrewer,\nrmarkdown, rvest, shiny, tidyr, webshot, xml2",
+        "Collate": "'as_data_frame.R' 'base64.R' 'build_data.R' 'compile_scss.R'\n'data_color.R' 'datasets.R' 'dt__.R' 'dt_body.R' 'dt_boxhead.R'\n'dt_cols_merge.R' 'dt_data.R' 'dt_footnotes.R' 'dt_formats.R'\n'dt_groups_rows.R' 'dt_has_built.R' 'dt_heading.R'\n'dt_options.R' 'dt_row_groups.R' 'dt_source_notes.R'\n'dt_spanners.R' 'dt_stub_df.R' 'dt_stub_others.R'\n'dt_stubhead.R' 'dt_styles.R' 'dt_summary.R' 'dt_transforms.R'\n'export.R' 'format_data.R' 'gt-package.R' 'gt.R' 'gt_preview.R'\n'helpers.R' 'image.R' 'info_tables.R' 'location_methods.R'\n'modify_columns.R' 'modify_rows.R' 'tab_create_modify.R'\n'opts.R' 'print.R' 'reexports.R' 'render_as_html.R'\n'resolver.R' 'shiny.R' 'summary_rows.R' 'text_transform.R'\n'utils.R' 'utils_formatters.R' 'utils_general_str_formatting.R'\n'utils_pipe.R' 'utils_render_common.R'\n'utils_render_footnotes.R' 'utils_render_html.R'\n'utils_render_latex.R' 'utils_render_rtf.R' 'zzz.R'",
+        "NeedsCompilation": "no",
+        "Packaged": "2020-08-05 20:07:24 UTC; rich",
+        "Author": "Richard Iannone [aut, cre] (<https://orcid.org/0000-0003-3925-190X>),\n  Joe Cheng [aut],\n  Barret Schloerke [aut] (<https://orcid.org/0000-0001-9986-114X>),\n  RStudio [cph, fnd]",
+        "Maintainer": "Richard Iannone <rich@rstudio.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2020-08-05 22:00:02 UTC",
+        "Built": "R 4.0.2; ; 2020-08-06 10:24:47 UTC; unix"
+      }
+    },
+    "gtable": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "gtable",
+        "Title": "Arrange 'Grobs' in Tables",
+        "Version": "0.3.0",
+        "Authors@R": "\n    c(person(given = \"Hadley\",\n             family = \"Wickham\",\n             role = c(\"aut\", \"cre\"),\n             email = \"hadley@rstudio.com\"),\n      person(given = \"Thomas Lin\",\n             family = \"Pedersen\",\n             role = \"aut\",\n             email = \"thomas.pedersen@rstudio.com\"),\n      person(given = \"RStudio\",\n             role = \"cph\"))",
+        "Description": "Tools to make it easier to work with \"tables\" of\n    'grobs'. The 'gtable' package defines a 'gtable' grob class that specifies a\n    grid along with a list of grobs and their placement in the grid. Further the\n    package makes it easy to manipulate and combine 'gtable' objects so that \n    complex compositions can be build up sequentially.",
+        "License": "GPL-2",
+        "Depends": "R (>= 3.0)",
+        "Imports": "grid",
+        "Suggests": "covr, testthat, knitr, rmarkdown, ggplot2, profvis",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "6.1.1",
+        "Collate": "'new-data-frame.r' 'add-grob.r' 'add-rows-cols.r'\n'add-space.r' 'grid.r' 'gtable-layouts.r' 'gtable-package.R'\n'gtable.r' 'rbind-cbind.r' 'utils.r' 'trim.r' 'filter.r'\n'align.r' 'padding.r' 'z.r'",
+        "URL": "https://github.com/r-lib/gtable",
+        "BugReports": "https://github.com/r-lib/gtable/issues",
+        "VignetteBuilder": "knitr",
+        "NeedsCompilation": "no",
+        "Packaged": "2019-03-25 14:56:43 UTC; thomas",
+        "Author": "Hadley Wickham [aut, cre],\n  Thomas Lin Pedersen [aut],\n  RStudio [cph]",
+        "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2019-03-25 19:50:02 UTC",
+        "Built": "R 4.0.0; ; 2020-05-09 16:00:21 UTC; unix"
       }
     },
     "highr": {
@@ -416,6 +868,35 @@
         "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-01-25 10:51:31 UTC; unix"
       }
     },
+    "isoband": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "isoband",
+        "Title": "Generate Isolines and Isobands from Regularly Spaced Elevation\nGrids",
+        "Version": "0.2.4",
+        "Authors@R": "\n    c(person(given = \"Claus O.\",\n             family = \"Wilke\",\n             role = c(\"aut\", \"cre\"),\n             email = \"wilke@austin.utexas.edu\",\n             comment = c(ORCID = \"0000-0002-7470-9261\")),\n      person(given = \"Thomas Lin\",\n             family = \"Pedersen\",\n             role = \"aut\",\n             email = \"thomasp85@gmail.com\",\n             comment = c(ORCID = \"0000-0002-5147-4711\")),\n      person(given = \"testthat and Catch authors\",\n             role = \"ctb\",\n             comment = \"testthat C++ testing code\"))",
+        "Description": "A fast C++ implementation to generate contour lines (isolines) and\n  contour polygons (isobands) from regularly spaced grids containing elevation data.",
+        "URL": "https://github.com/wilkelab/isoband",
+        "BugReports": "https://github.com/wilkelab/isoband/issues",
+        "License": "MIT + file LICENSE",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "Imports": "grid, utils",
+        "RoxygenNote": "7.1.1",
+        "Config/testthat/edition": "3",
+        "Suggests": "covr, ggplot2, knitr, magick, microbenchmark, rmarkdown, sf,\ntestthat, xml2",
+        "SystemRequirements": "C++11",
+        "VignetteBuilder": "knitr",
+        "NeedsCompilation": "yes",
+        "Packaged": "2021-03-02 23:14:17 UTC; clauswilke",
+        "Author": "Claus O. Wilke [aut, cre] (<https://orcid.org/0000-0002-7470-9261>),\n  Thomas Lin Pedersen [aut] (<https://orcid.org/0000-0002-5147-4711>),\n  testthat and Catch authors [ctb] (testthat C++ testing code)",
+        "Maintainer": "Claus O. Wilke <wilke@austin.utexas.edu>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-03-03 17:10:20 UTC",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-03-04 10:49:07 UTC; unix"
+      }
+    },
     "jsonlite": {
       "Source": "CRAN",
       "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
@@ -470,6 +951,87 @@
         "Repository": "RSPM",
         "Date/Publication": "2021-01-27 15:10:05 UTC",
         "Built": "R 4.0.3; ; 2021-01-28 10:43:38 UTC; unix"
+      }
+    },
+    "labeling": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "labeling",
+        "Type": "Package",
+        "Title": "Axis Labeling",
+        "Version": "0.4.2",
+        "Date": "2020-10-15",
+        "Author": "Justin Talbot,",
+        "Maintainer": "Nuno Sempere <nuno.semperelh@gmail.com>",
+        "Description": "Functions which provide a range of axis labeling algorithms. ",
+        "License": "MIT + file LICENSE | Unlimited",
+        "Collate": "'labeling.R'",
+        "NeedsCompilation": "no",
+        "Imports": "stats, graphics",
+        "Packaged": "2020-10-18 12:56:46 UTC; nuno",
+        "Repository": "RSPM",
+        "Date/Publication": "2020-10-20 07:00:09 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; ; 2020-10-21 11:15:47 UTC; unix"
+      }
+    },
+    "lattice": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "lattice",
+        "Version": "0.20-41",
+        "Date": "2020-04-01",
+        "Priority": "recommended",
+        "Title": "Trellis Graphics for R",
+        "Authors@R": "c(person(\"Deepayan\", \"Sarkar\", role = c(\"aut\", \"cre\"),\n\t            email = \"deepayan.sarkar@r-project.org\",\n\t\t    comment = c(ORCID = \"0000-0003-4107-1553\")),\n              person(\"Felix\", \"Andrews\", role = \"ctb\"),\n\t      person(\"Kevin\", \"Wright\", role = \"ctb\", comment = \"documentation\"),\n\t      person(\"Neil\", \"Klepeis\", role = \"ctb\"),\n              person(\"Paul\", \"Murrell\", role = \"ctb\", email = \"paul@stat.auckland.ac.nz\"))",
+        "Description": "A powerful and elegant high-level data visualization\n  system inspired by Trellis graphics, with an emphasis on\n  multivariate data. Lattice is sufficient for typical graphics needs,\n  and is also flexible enough to handle most nonstandard requirements.\n  See ?Lattice for an introduction.",
+        "Depends": "R (>= 3.0.0)",
+        "Suggests": "KernSmooth, MASS, latticeExtra",
+        "Imports": "grid, grDevices, graphics, stats, utils",
+        "Enhances": "chron",
+        "LazyLoad": "yes",
+        "LazyData": "yes",
+        "License": "GPL (>= 2)",
+        "URL": "http://lattice.r-forge.r-project.org/",
+        "BugReports": "https://github.com/deepayan/lattice/issues",
+        "NeedsCompilation": "yes",
+        "Packaged": "2020-04-02 10:52:37 UTC; deepayan",
+        "Author": "Deepayan Sarkar [aut, cre] (<https://orcid.org/0000-0003-4107-1553>),\n  Felix Andrews [ctb],\n  Kevin Wright [ctb] (documentation),\n  Neil Klepeis [ctb],\n  Paul Murrell [ctb]",
+        "Maintainer": "Deepayan Sarkar <deepayan.sarkar@r-project.org>",
+        "Repository": "CRAN",
+        "Date/Publication": "2020-04-02 12:00:06 UTC",
+        "Built": "R 4.0.2; x86_64-pc-linux-gnu; 2020-06-22 08:05:21 UTC; unix"
+      }
+    },
+    "lifecycle": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "lifecycle",
+        "Title": "Manage the Life Cycle of your Package Functions",
+        "Version": "1.0.0",
+        "Authors@R": "\n    c(person(given = \"Lionel\",\n             family = \"Henry\",\n             role = c(\"aut\", \"cre\"),\n             email = \"lionel@rstudio.com\"),\n      person(given = \"Hadley\",\n             family = \"Wickham\",\n             role = \"aut\",\n             email = \"hadley@rstudio.com\",\n             comment = c(ORCID = \"0000-0003-4757-117X\")),\n      person(given = \"RStudio\",\n             role = \"cph\"))",
+        "Description": "Manage the life cycle of your exported functions\n    with shared conventions, documentation badges, and user-friendly\n    deprecation warnings.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://lifecycle.r-lib.org/, https://github.com/r-lib/lifecycle",
+        "BugReports": "https://github.com/r-lib/lifecycle/issues",
+        "Depends": "R (>= 3.3)",
+        "Imports": "glue, rlang (>= 0.4.10)",
+        "Suggests": "covr, crayon, knitr, rmarkdown, testthat (>= 3.0.1), tibble",
+        "VignetteBuilder": "knitr",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "RoxygenNote": "7.1.1",
+        "NeedsCompilation": "no",
+        "Packaged": "2021-02-15 13:48:33 UTC; hadley",
+        "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>),\n  RStudio [cph]",
+        "Maintainer": "Lionel Henry <lionel@rstudio.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-02-15 15:20:06 UTC",
+        "Built": "R 4.0.3; ; 2021-02-16 10:45:23 UTC; unix"
       }
     },
     "lubridate": {
@@ -560,6 +1122,31 @@
         "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 16:06:50 UTC; unix"
       }
     },
+    "mgcv": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "mgcv",
+        "Version": "1.8-34",
+        "Author": "Simon Wood <simon.wood@r-project.org>",
+        "Maintainer": "Simon Wood <simon.wood@r-project.org>",
+        "Title": "Mixed GAM Computation Vehicle with Automatic Smoothness\nEstimation",
+        "Description": "Generalized additive (mixed) models, some of their extensions and \n             other generalized ridge regression with multiple smoothing \n             parameter estimation by (Restricted) Marginal Likelihood, \n             Generalized Cross Validation and similar, or using iterated \n             nested Laplace approximation for fully Bayesian inference. See \n             Wood (2017) <doi:10.1201/9781315370279> for an overview. \n             Includes a gam() function, a wide variety of smoothers, 'JAGS' \n             support and distributions beyond the exponential family. ",
+        "Priority": "recommended",
+        "Depends": "R (>= 3.6.0), nlme (>= 3.1-64)",
+        "Imports": "methods, stats, graphics, Matrix, splines, utils",
+        "Suggests": "parallel, survival, MASS",
+        "LazyLoad": "yes",
+        "ByteCompile": "yes",
+        "License": "GPL (>= 2)",
+        "NeedsCompilation": "yes",
+        "Packaged": "2021-02-16 11:38:19 UTC; sw283",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-02-16 18:50:03 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-17 10:42:57 UTC; unix"
+      }
+    },
     "mime": {
       "Source": "CRAN",
       "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
@@ -584,6 +1171,61 @@
         "Repository": "RSPM",
         "Date/Publication": "2021-02-13 07:30:02 UTC",
         "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-15 10:44:59 UTC; unix"
+      }
+    },
+    "munsell": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "munsell",
+        "Type": "Package",
+        "Title": "Utilities for Using Munsell Colours",
+        "Version": "0.5.0",
+        "Author": "Charlotte Wickham <cwickham@gmail.com>",
+        "Maintainer": "Charlotte Wickham <cwickham@gmail.com>",
+        "Description": "Provides easy access to, and manipulation of, the Munsell \n    colours. Provides a mapping between Munsell's \n    original notation (e.g. \"5R 5/10\") and hexadecimal strings suitable \n    for use directly in R graphics. Also provides utilities \n    to explore slices through the Munsell colour tree, to transform \n    Munsell colours and display colour palettes.",
+        "Suggests": "ggplot2, testthat",
+        "Imports": "colorspace, methods",
+        "License": "MIT + file LICENSE",
+        "URL": "https://cran.r-project.org/package=munsell,\nhttps://github.com/cwickham/munsell/",
+        "RoxygenNote": "6.0.1",
+        "NeedsCompilation": "no",
+        "Packaged": "2018-06-11 23:15:15 UTC; wickhamc",
+        "Repository": "RSPM",
+        "Date/Publication": "2018-06-12 04:29:06 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.0; ; 2020-05-09 17:37:02 UTC; unix"
+      }
+    },
+    "nlme": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "nlme",
+        "Version": "3.1-152",
+        "Date": "2021-02-03",
+        "Priority": "recommended",
+        "Title": "Linear and Nonlinear Mixed Effects Models",
+        "Authors@R": "c(person(\"José\", \"Pinheiro\", role = \"aut\", comment = \"S version\"),\n             person(\"Douglas\", \"Bates\", role = \"aut\", comment = \"up to 2007\"),\n             person(\"Saikat\", \"DebRoy\", role = \"ctb\", comment = \"up to 2002\"),\n             person(\"Deepayan\", \"Sarkar\", role = \"ctb\", comment = \"up to 2005\"),\n             person(\"EISPACK authors\", role = \"ctb\", comment = \"src/rs.f\"),\n\t     person(\"Siem\", \"Heisterkamp\", role = \"ctb\", comment = \"Author fixed sigma\"),\n             person(\"Bert\", \"Van Willigen\",role = \"ctb\", comment = \"Programmer fixed sigma\"),\n             person(\"Johannes\", \"Ranke\", role = \"ctb\", comment = \"varConstProp()\"),\n\t     person(\"R-core\", email = \"R-core@R-project.org\",\n                    role = c(\"aut\", \"cre\")))",
+        "Contact": "see 'MailingList'",
+        "Description": "Fit and compare Gaussian linear and nonlinear mixed-effects models.",
+        "Depends": "R (>= 3.4.0)",
+        "Imports": "graphics, stats, utils, lattice",
+        "Suggests": "Hmisc, MASS",
+        "LazyData": "yes",
+        "ByteCompile": "yes",
+        "Encoding": "UTF-8",
+        "License": "GPL (>= 2) | file LICENCE",
+        "BugReports": "https://bugs.r-project.org",
+        "MailingList": "R-help@r-project.org",
+        "URL": "https://svn.r-project.org/R-packages/trunk/nlme/",
+        "NeedsCompilation": "yes",
+        "Packaged": "2021-02-03 21:06:11 UTC; ripley",
+        "Author": "José Pinheiro [aut] (S version),\n  Douglas Bates [aut] (up to 2007),\n  Saikat DebRoy [ctb] (up to 2002),\n  Deepayan Sarkar [ctb] (up to 2005),\n  EISPACK authors [ctb] (src/rs.f),\n  Siem Heisterkamp [ctb] (Author fixed sigma),\n  Bert Van Willigen [ctb] (Programmer fixed sigma),\n  Johannes Ranke [ctb] (varConstProp()),\n  R-core [aut, cre]",
+        "Maintainer": "R-core <R-core@R-project.org>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-02-04 07:02:30 UTC",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:50:40 UTC; unix"
       }
     },
     "openssl": {
@@ -614,6 +1256,60 @@
         "Built": "R 4.0.2; x86_64-pc-linux-gnu; 2020-09-21 10:45:52 UTC; unix"
       }
     },
+    "pillar": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "pillar",
+        "Title": "Coloured Formatting for Columns",
+        "Version": "1.5.1",
+        "Authors@R": "\n    c(person(given = \"Kirill\",\n             family = \"M\\u00fcller\",\n             role = c(\"aut\", \"cre\"),\n             email = \"krlmlr+r@mailbox.org\"),\n      person(given = \"Hadley\",\n             family = \"Wickham\",\n             role = \"aut\"),\n      person(given = \"RStudio\",\n             role = \"cph\"))",
+        "Description": "Provides 'pillar' and 'colonnade' generics designed\n    for formatting columns of data using the full range of colours\n    provided by modern terminals.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://pillar.r-lib.org/, https://github.com/r-lib/pillar",
+        "BugReports": "https://github.com/r-lib/pillar/issues",
+        "Imports": "cli, crayon (>= 1.3.4), ellipsis, fansi, lifecycle, rlang (>=\n0.3.0), utf8 (>= 1.1.0), utils, vctrs (>= 0.2.0)",
+        "Suggests": "bit64, debugme, DiagrammeR, knitr, lubridate, nycflights13,\npalmerpenguins, rmarkdown, survival, testthat (>= 3.0.2),\ntibble, withr",
+        "VignetteBuilder": "knitr",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "RoxygenNote": "7.1.1.9001",
+        "Config/testthat/edition": "3",
+        "Config/testthat/parallel": "true",
+        "Config/testthat/start-first": "format_multi_fuzz, format_multi_fuzz_2,\nformat_multi, ctl_colonnade, ctl_colonnade_1, ctl_colonnade_2",
+        "NeedsCompilation": "no",
+        "Packaged": "2021-03-05 16:24:18 UTC; kirill",
+        "Author": "Kirill Müller [aut, cre],\n  Hadley Wickham [aut],\n  RStudio [cph]",
+        "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-03-05 18:20:02 UTC",
+        "Built": "R 4.0.3; ; 2021-03-08 11:04:50 UTC; unix"
+      }
+    },
+    "pkgconfig": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "pkgconfig",
+        "Title": "Private Configuration for 'R' Packages",
+        "Version": "2.0.3",
+        "Author": "Gábor Csárdi",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Description": "Set configuration options on a per-package basis.\n    Options set by a given package only apply to that package,\n    other packages are unaffected.",
+        "License": "MIT + file LICENSE",
+        "LazyData": "true",
+        "Imports": "utils",
+        "Suggests": "covr, testthat, disposables (>= 1.0.3)",
+        "URL": "https://github.com/r-lib/pkgconfig#readme",
+        "BugReports": "https://github.com/r-lib/pkgconfig/issues",
+        "Encoding": "UTF-8",
+        "NeedsCompilation": "no",
+        "Packaged": "2019-09-22 08:42:40 UTC; gaborcsardi",
+        "Repository": "RSPM",
+        "Date/Publication": "2019-09-22 09:20:02 UTC",
+        "Built": "R 4.0.0; ; 2020-05-09 16:12:02 UTC; unix"
+      }
+    },
     "png": {
       "Source": "CRAN",
       "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
@@ -634,6 +1330,62 @@
         "Date/Publication": "2013-12-03 22:25:05",
         "Encoding": "UTF-8",
         "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:19:53 UTC; unix"
+      }
+    },
+    "purrr": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "purrr",
+        "Title": "Functional Programming Tools",
+        "Version": "0.3.4",
+        "Authors@R": "\n    c(person(given = \"Lionel\",\n             family = \"Henry\",\n             role = c(\"aut\", \"cre\"),\n             email = \"lionel@rstudio.com\"),\n      person(given = \"Hadley\",\n             family = \"Wickham\",\n             role = \"aut\",\n             email = \"hadley@rstudio.com\"),\n      person(given = \"RStudio\",\n             role = c(\"cph\", \"fnd\")))",
+        "Description": "A complete and consistent functional programming\n    toolkit for R.",
+        "License": "GPL-3 | file LICENSE",
+        "URL": "http://purrr.tidyverse.org, https://github.com/tidyverse/purrr",
+        "BugReports": "https://github.com/tidyverse/purrr/issues",
+        "Depends": "R (>= 3.2)",
+        "Imports": "magrittr (>= 1.5), rlang (>= 0.3.1)",
+        "Suggests": "covr, crayon, dplyr (>= 0.7.8), knitr, rmarkdown, testthat,\ntibble, tidyselect",
+        "VignetteBuilder": "knitr",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "RoxygenNote": "7.1.0",
+        "NeedsCompilation": "yes",
+        "Packaged": "2020-04-16 21:54:48 UTC; hadley",
+        "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut],\n  RStudio [cph, fnd]",
+        "Maintainer": "Lionel Henry <lionel@rstudio.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2020-04-17 12:10:07 UTC",
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 17:28:54 UTC; unix"
+      }
+    },
+    "rappdirs": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Type": "Package",
+        "Package": "rappdirs",
+        "Title": "Application Directories: Determine Where to Save Data, Caches,\nand Logs",
+        "Version": "0.3.3",
+        "Authors@R": "\n    c(person(given = \"Hadley\",\n             family = \"Wickham\",\n             role = c(\"trl\", \"cre\", \"cph\"),\n             email = \"hadley@rstudio.com\"),\n      person(given = \"RStudio\",\n             role = \"cph\"),\n      person(given = \"Sridhar\",\n             family = \"Ratnakumar\",\n             role = \"aut\"),\n      person(given = \"Trent\",\n             family = \"Mick\",\n             role = \"aut\"),\n      person(given = \"ActiveState\",\n             role = \"cph\",\n             comment = \"R/appdir.r, R/cache.r, R/data.r, R/log.r translated from appdirs\"),\n      person(given = \"Eddy\",\n             family = \"Petrisor\",\n             role = \"ctb\"),\n      person(given = \"Trevor\",\n             family = \"Davis\",\n             role = c(\"trl\", \"aut\")),\n      person(given = \"Gabor\",\n             family = \"Csardi\",\n             role = \"ctb\"),\n      person(given = \"Gregory\",\n             family = \"Jefferis\",\n             role = \"ctb\"))",
+        "Description": "An easy way to determine which directories on the\n    users computer you should use to save data, caches and logs. A port of\n    Python's 'Appdirs' (<https://github.com/ActiveState/appdirs>) to\n    R.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://rappdirs.r-lib.org, https://github.com/r-lib/rappdirs",
+        "BugReports": "https://github.com/r-lib/rappdirs/issues",
+        "Depends": "R (>= 3.2)",
+        "Suggests": "roxygen2, testthat (>= 3.0.0), covr, withr",
+        "Copyright": "Original python appdirs module copyright (c) 2010\nActiveState Software Inc. R port copyright Hadley Wickham,\nRStudio. See file LICENSE for details.",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.1.1",
+        "Config/testthat/edition": "3",
+        "NeedsCompilation": "yes",
+        "Packaged": "2021-01-28 22:29:57 UTC; hadley",
+        "Author": "Hadley Wickham [trl, cre, cph],\n  RStudio [cph],\n  Sridhar Ratnakumar [aut],\n  Trent Mick [aut],\n  ActiveState [cph] (R/appdir.r, R/cache.r, R/data.r, R/log.r translated\n    from appdirs),\n  Eddy Petrisor [ctb],\n  Trevor Davis [trl, aut],\n  Gabor Csardi [ctb],\n  Gregory Jefferis [ctb]",
+        "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-01-31 05:40:02 UTC",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-01 10:47:21 UTC; unix"
       }
     },
     "rlang": {
@@ -749,6 +1501,62 @@
         "Built": "R 4.0.3; ; 2020-11-13 10:42:19 UTC; unix"
       }
     },
+    "sass": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Type": "Package",
+        "Package": "sass",
+        "Version": "0.4.0",
+        "Title": "Syntactically Awesome Style Sheets ('Sass')",
+        "Description": "An 'SCSS' compiler, powered by the 'LibSass' library. With this,\n    R developers can use variables, inheritance, and functions to generate\n    dynamic style sheets. The package uses the 'Sass CSS' extension language,\n    which is stable, powerful, and CSS compatible.",
+        "Authors@R": "c(\n    person(\"Joe\", \"Cheng\", , \"joe@rstudio.com\", \"aut\"),\n    person(\"Timothy\", \"Mastny\", , \"tim.mastny@gmail.com\", \"aut\"),\n    person(\"Richard\", \"Iannone\", , \"rich@rstudio.com\", \"aut\",\n       comment = c(ORCID = \"0000-0003-3925-190X\")),\n    person(\"Barret\", \"Schloerke\", , \"barret@rstudio.com\", \"aut\",\n           comment = c(ORCID = \"0000-0001-9986-114X\")),\n    person(\"Carson\", \"Sievert\", , \"carson@rstudio.com\", c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0002-4958-2844\")),\n    person(\"Christophe\", \"Dervieux\", , \"cderv@rstudio.com\", c(\"ctb\"),\n           comment = c(ORCID = \"0000-0003-4474-2498\")),\n    person(family = \"RStudio\", role = c(\"cph\", \"fnd\")),\n    person(family = \"Sass Open Source Foundation\", role = c(\"ctb\", \"cph\"),\n           comment = \"LibSass library\"),\n    person(\"Greter\", \"Marcel\", role = c(\"ctb\", \"cph\"),\n           comment = \"LibSass library\"),\n    person(\"Mifsud\", \"Michael\", role = c(\"ctb\", \"cph\"),\n           comment = \"LibSass library\"),\n    person(\"Hampton\", \"Catlin\", role = c(\"ctb\", \"cph\"),\n           comment = \"LibSass library\"),\n    person(\"Natalie\", \"Weizenbaum\", role = c(\"ctb\", \"cph\"),\n           comment = \"LibSass library\"),\n    person(\"Chris\", \"Eppstein\", role = c(\"ctb\", \"cph\"),\n           comment = \"LibSass library\"),\n    person(\"Adams\", \"Joseph\", role = c(\"ctb\", \"cph\"),\n           comment = \"json.cpp\"),\n    person(\"Trifunovic\", \"Nemanja\", role = c(\"ctb\", \"cph\"),\n           comment = \"utf8.h\")\n    )",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/rstudio/sass",
+        "BugReports": "https://github.com/rstudio/sass/issues",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.1.1",
+        "SystemRequirements": "GNU make",
+        "Imports": "fs, rlang (>= 0.4.10), htmltools (>= 0.5.1), R6, rappdirs",
+        "Suggests": "testthat, knitr, rmarkdown, withr, shiny, curl",
+        "VignetteBuilder": "knitr",
+        "Config/testthat/edition": "3",
+        "NeedsCompilation": "yes",
+        "Packaged": "2021-05-11 13:52:17 UTC; cpsievert",
+        "Author": "Joe Cheng [aut],\n  Timothy Mastny [aut],\n  Richard Iannone [aut] (<https://orcid.org/0000-0003-3925-190X>),\n  Barret Schloerke [aut] (<https://orcid.org/0000-0001-9986-114X>),\n  Carson Sievert [aut, cre] (<https://orcid.org/0000-0002-4958-2844>),\n  Christophe Dervieux [ctb] (<https://orcid.org/0000-0003-4474-2498>),\n  RStudio [cph, fnd],\n  Sass Open Source Foundation [ctb, cph] (LibSass library),\n  Greter Marcel [ctb, cph] (LibSass library),\n  Mifsud Michael [ctb, cph] (LibSass library),\n  Hampton Catlin [ctb, cph] (LibSass library),\n  Natalie Weizenbaum [ctb, cph] (LibSass library),\n  Chris Eppstein [ctb, cph] (LibSass library),\n  Adams Joseph [ctb, cph] (json.cpp),\n  Trifunovic Nemanja [ctb, cph] (utf8.h)",
+        "Maintainer": "Carson Sievert <carson@rstudio.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-05-12 06:00:02 UTC",
+        "Built": "R 4.0.4; x86_64-pc-linux-gnu; 2021-05-13 10:50:59 UTC; unix"
+      }
+    },
+    "scales": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "scales",
+        "Title": "Scale Functions for Visualization",
+        "Version": "1.1.1",
+        "Authors@R": "\n    c(person(given = \"Hadley\",\n             family = \"Wickham\",\n             role = c(\"aut\", \"cre\"),\n             email = \"hadley@rstudio.com\"),\n      person(given = \"Dana\",\n             family = \"Seidel\",\n             role = \"aut\"),\n      person(given = \"RStudio\",\n             role = \"cph\"))",
+        "Description": "Graphical scales map data to aesthetics, and\n    provide methods for automatically determining breaks and labels for\n    axes and legends.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://scales.r-lib.org, https://github.com/r-lib/scales",
+        "BugReports": "https://github.com/r-lib/scales/issues",
+        "Depends": "R (>= 3.2)",
+        "Imports": "farver (>= 2.0.3), labeling, lifecycle, munsell (>= 0.5), R6,\nRColorBrewer, viridisLite",
+        "Suggests": "bit64, covr, dichromat, ggplot2, hms (>= 0.5.0), testthat (>=\n2.1.0)",
+        "Encoding": "UTF-8",
+        "LazyLoad": "yes",
+        "RoxygenNote": "7.1.0",
+        "NeedsCompilation": "no",
+        "Packaged": "2020-05-11 14:46:40 UTC; hadley",
+        "Author": "Hadley Wickham [aut, cre],\n  Dana Seidel [aut],\n  RStudio [cph]",
+        "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2020-05-11 23:20:05 UTC",
+        "Built": "R 4.0.0; ; 2020-05-15 16:05:15 UTC; unix"
+      }
+    },
     "stringi": {
       "Source": "CRAN",
       "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
@@ -832,6 +1640,66 @@
         "Built": "R 4.0.2; x86_64-pc-linux-gnu; 2020-07-27 10:17:51 UTC; unix"
       }
     },
+    "tibble": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "tibble",
+        "Title": "Simple Data Frames",
+        "Version": "3.1.0",
+        "Authors@R": "\n    c(person(given = \"Kirill\",\n             family = \"M\\u00fcller\",\n             role = c(\"aut\", \"cre\"),\n             email = \"krlmlr+r@mailbox.org\"),\n      person(given = \"Hadley\",\n             family = \"Wickham\",\n             role = \"aut\",\n             email = \"hadley@rstudio.com\"),\n      person(given = \"Romain\",\n             family = \"Francois\",\n             role = \"ctb\",\n             email = \"romain@r-enthusiasts.com\"),\n      person(given = \"Jennifer\",\n             family = \"Bryan\",\n             role = \"ctb\",\n             email = \"jenny@rstudio.com\"),\n      person(given = \"RStudio\",\n             role = \"cph\"))",
+        "Description": "Provides a 'tbl_df' class (the 'tibble') that\n    provides stricter checking and better formatting than the traditional\n    data frame.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://tibble.tidyverse.org/, https://github.com/tidyverse/tibble",
+        "BugReports": "https://github.com/tidyverse/tibble/issues",
+        "Depends": "R (>= 3.1.0)",
+        "Imports": "ellipsis (>= 0.2.0), fansi (>= 0.4.0), lifecycle (>= 0.2.0),\nmagrittr, methods, pillar (>= 1.5.0), pkgconfig, rlang (>=\n0.4.3), utils, vctrs (>= 0.3.2)",
+        "Suggests": "bench, bit64, blob, cli, covr, crayon (>= 1.3.4), DiagrammeR,\ndplyr, evaluate, formattable, ggplot2, hms, htmltools, import,\nknitr, lubridate, mockr, nycflights13, purrr, rmarkdown,\ntestthat (>= 3.0.2), tidyr, withr",
+        "VignetteBuilder": "knitr",
+        "Encoding": "UTF-8",
+        "LazyData": "yes",
+        "RoxygenNote": "7.1.1.9001",
+        "Config/testthat/edition": "3",
+        "Config/testthat/parallel": "true",
+        "Config/testthat/start-first": "subsetting, as_tibble, add, invariants",
+        "NeedsCompilation": "yes",
+        "Packaged": "2021-02-25 06:57:46 UTC; kirill",
+        "Author": "Kirill Müller [aut, cre],\n  Hadley Wickham [aut],\n  Romain Francois [ctb],\n  Jennifer Bryan [ctb],\n  RStudio [cph]",
+        "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-02-25 15:50:02 UTC",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-26 10:39:58 UTC; unix"
+      }
+    },
+    "tidyselect": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "tidyselect",
+        "Title": "Select from a Set of Strings",
+        "Version": "1.1.0",
+        "Authors@R": "c(\n    person(\"Lionel\", \"Henry\", ,\"lionel@rstudio.com\", c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", ,\"hadley@rstudio.com\", \"aut\"),\n    person(\"RStudio\", role = \"cph\")\n    )",
+        "Description": "A backend for the selecting functions of the 'tidyverse'.\n    It makes it easy to implement select-like functions in your own\n    packages in a way that is consistent with other 'tidyverse'\n    interfaces for selection.",
+        "Depends": "R (>= 3.2)",
+        "Imports": "ellipsis, glue (>= 1.3.0), purrr (>= 0.3.2), rlang (>= 0.4.6),\nvctrs (>= 0.2.2)",
+        "Suggests": "covr, crayon, dplyr, knitr, magrittr, rmarkdown, testthat (>=\n2.3.0), tibble (>= 2.1.3), withr",
+        "License": "GPL-3",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "ByteCompile": "true",
+        "RoxygenNote": "7.1.0",
+        "URL": "https://tidyselect.r-lib.org, https://github.com/r-lib/tidyselect",
+        "BugReports": "https://github.com/r-lib/tidyselect/issues",
+        "VignetteBuilder": "knitr",
+        "NeedsCompilation": "yes",
+        "Packaged": "2020-05-11 17:13:55 UTC; lionel",
+        "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut],\n  RStudio [cph]",
+        "Maintainer": "Lionel Henry <lionel@rstudio.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2020-05-11 23:10:07 UTC",
+        "Built": "R 4.0.2; ; 2020-11-06 19:01:23 UTC; unix"
+      }
+    },
     "tinytex": {
       "Source": "CRAN",
       "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
@@ -856,6 +1724,33 @@
         "Repository": "RSPM",
         "Date/Publication": "2021-03-30 15:40:02 UTC",
         "Built": "R 4.0.4; ; 2021-03-31 10:50:53 UTC; unix"
+      }
+    },
+    "utf8": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "utf8",
+        "Title": "Unicode Text Processing",
+        "Version": "1.2.1",
+        "Authors@R": "\n    c(person(given = c(\"Patrick\", \"O.\"),\n             family = \"Perry\",\n             role = c(\"aut\", \"cph\")),\n      person(given = \"Kirill\",\n             family = \"M\\u00fcller\",\n             role = \"cre\",\n             email = \"krlmlr+r@mailbox.org\"),\n      person(given = \"Unicode, Inc.\",\n             role = c(\"cph\", \"dtc\"),\n             comment = \"Unicode Character Database\"))",
+        "Description": "Process and print 'UTF-8' encoded international\n    text (Unicode). Input, validate, normalize, encode, format, and\n    display.",
+        "License": "Apache License (== 2.0) | file LICENSE",
+        "URL": "https://ptrckprry.com/r-utf8/, https://github.com/patperry/r-utf8",
+        "BugReports": "https://github.com/patperry/r-utf8/issues",
+        "Depends": "R (>= 2.10)",
+        "Suggests": "covr, knitr, rlang, rmarkdown, testthat (>= 3.0.0)",
+        "VignetteBuilder": "knitr, rmarkdown",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "LazyData": "Yes",
+        "NeedsCompilation": "yes",
+        "Packaged": "2021-03-12 03:51:46 UTC; kirill",
+        "Author": "Patrick O. Perry [aut, cph],\n  Kirill Müller [cre],\n  Unicode, Inc. [cph, dtc] (Unicode Character Database)",
+        "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-03-12 21:30:02 UTC",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-03-15 10:51:13 UTC; unix"
       }
     },
     "vctrs": {
@@ -886,6 +1781,33 @@
         "Built": "R 4.0.4; x86_64-pc-linux-gnu; 2021-03-30 10:46:25 UTC; unix"
       }
     },
+    "viridisLite": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "viridisLite",
+        "Type": "Package",
+        "Title": "Default Color Maps from 'matplotlib' (Lite Version)",
+        "Version": "0.3.0",
+        "Authors@R": "c(\n      person(\"Simon\", \"Garnier\", email = \"garnier@njit.edu\", role = c(\"aut\", \"cre\")),\n      person(\"Noam\", \"Ross\", email = \"noam.ross@gmail.com\", role = c(\"ctb\", \"cph\")),\n      person(\"Bob\", \"Rudis\", email = \"bob@rud.is\", role = c(\"ctb\", \"cph\")),\n      person(\"Marco\", \"Sciaini\", email = \"sciaini.marco@gmail.com\", role = c(\"ctb\", \"cph\")),\n      person(\"Cédric\", \"Scherer\", email = \"scherer@izw-berlin.de\", role = c(\"ctb\", \"cph\"))\n  )",
+        "Maintainer": "Simon Garnier <garnier@njit.edu>",
+        "Description": "Implementation of the 'viridis' - the default -, 'magma', 'plasma', \n    'inferno', and 'cividis' color maps for 'R'. 'viridis', 'magma', 'plasma', \n    and 'inferno' are ported from 'matplotlib' <http://matplotlib.org/>, a \n    popular plotting library for 'python'. 'cividis', was developed by Jamie R. \n    Nuñez and Sean M. Colby. These color maps are designed in such a way that \n    they will analytically be perfectly perceptually-uniform, both in regular \n    form and also when converted to black-and-white. They are also designed to \n    be perceived by readers with the most common form of color blindness (all \n    color maps in this package) and color vision deficiency ('cividis' only). \n    This is the 'lite' version of the more complete 'viridis' package that can \n    be found at <https://cran.r-project.org/package=viridis>.",
+        "License": "MIT + file LICENSE",
+        "LazyData": "TRUE",
+        "Encoding": "UTF-8",
+        "Depends": "R (>= 2.10)",
+        "Suggests": "hexbin (>= 1.27.0), ggplot2 (>= 1.0.1), testthat, covr",
+        "URL": "https://github.com/sjmgarnier/viridisLite",
+        "BugReports": "https://github.com/sjmgarnier/viridisLite/issues",
+        "RoxygenNote": "6.0.1",
+        "NeedsCompilation": "no",
+        "Packaged": "2018-02-01 17:33:56 UTC; simon",
+        "Author": "Simon Garnier [aut, cre],\n  Noam Ross [ctb, cph],\n  Bob Rudis [ctb, cph],\n  Marco Sciaini [ctb, cph],\n  Cédric Scherer [ctb, cph]",
+        "Repository": "RSPM",
+        "Date/Publication": "2018-02-01 22:45:56 UTC",
+        "Built": "R 4.0.0; ; 2020-05-09 16:28:05 UTC; unix"
+      }
+    },
     "whisker": {
       "Source": "CRAN",
       "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
@@ -908,6 +1830,35 @@
         "Date/Publication": "2019-08-28 08:50:02 UTC",
         "Encoding": "UTF-8",
         "Built": "R 4.0.0; ; 2020-05-09 16:01:35 UTC; unix"
+      }
+    },
+    "withr": {
+      "Source": "CRAN",
+      "Repository": "https://atorus-rspm.eastus2.cloudapp.azure.com/cran-mirror/__linux__/bionic/latest",
+      "description": {
+        "Package": "withr",
+        "Title": "Run Code 'With' Temporarily Modified Global State",
+        "Version": "2.4.1",
+        "Authors@R": "\n    c(person(given = \"Jim\",\n             family = \"Hester\",\n             role = c(\"aut\", \"cre\"),\n             email = \"jim.hester@rstudio.com\"),\n      person(given = \"Kirill\",\n             family = \"Müller\",\n             role = \"aut\",\n             email = \"krlmlr+r@mailbox.org\"),\n      person(given = \"Kevin\",\n             family = \"Ushey\",\n             role = \"aut\",\n             email = \"kevinushey@gmail.com\"),\n      person(given = \"Hadley\",\n             family = \"Wickham\",\n             role = \"aut\",\n             email = \"hadley@rstudio.com\"),\n      person(given = \"Winston\",\n             family = \"Chang\",\n             role = \"aut\"),\n      person(given = \"Jennifer\",\n             family = \"Bryan\",\n             role = \"ctb\"),\n      person(given = \"Richard\",\n             family = \"Cotton\",\n             role = \"ctb\"),\n      person(given = \"RStudio\",\n             role = \"cph\"))",
+        "Description": "A set of functions to run code 'with' safely and\n    temporarily modified global state. Many of these functions were\n    originally a part of the 'devtools' package, this provides a simple\n    package with limited dependencies to provide access to these\n    functions.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://withr.r-lib.org, https://github.com/r-lib/withr#readme",
+        "BugReports": "https://github.com/r-lib/withr/issues",
+        "Depends": "R (>= 3.2.0)",
+        "Imports": "graphics, grDevices, stats",
+        "Suggests": "covr, DBI, knitr, lattice, methods, rmarkdown, RSQLite,\ntestthat (>= 2.1.0)",
+        "VignetteBuilder": "knitr",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "RoxygenNote": "7.1.1",
+        "Collate": "'local_.R' 'with_.R' 'collate.R' 'compat-defer.R'\n'connection.R' 'db.R' 'defer.R' 'wrap.R' 'devices.R' 'dir.R'\n'env.R' 'file.R' 'libpaths.R' 'locale.R' 'makevars.R'\n'namespace.R' 'options.R' 'par.R' 'path.R' 'rng.R' 'seed.R'\n'sink.R' 'tempfile.R' 'timezone.R' 'torture.R' 'utils.R'\n'with.R'",
+        "NeedsCompilation": "no",
+        "Packaged": "2021-01-26 14:29:58 UTC; jhester",
+        "Author": "Jim Hester [aut, cre],\n  Kirill Müller [aut],\n  Kevin Ushey [aut],\n  Hadley Wickham [aut],\n  Winston Chang [aut],\n  Jennifer Bryan [ctb],\n  Richard Cotton [ctb],\n  RStudio [cph]",
+        "Maintainer": "Jim Hester <jim.hester@rstudio.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-01-26 16:20:02 UTC",
+        "Built": "R 4.0.3; ; 2021-01-27 10:42:44 UTC; unix"
       }
     },
     "xfun": {
@@ -1006,25 +1957,28 @@
       "checksum": "dee73a029f22d67ecab6a910e4e8ce6c"
     },
     "atorus.css": {
-      "checksum": "c7ee176adf895c6064c78a17d233d9f7"
+      "checksum": "0b7f778763378e74568b1df11a529dab"
     },
     "docs/atorus.css": {
-      "checksum": "c7ee176adf895c6064c78a17d233d9f7"
+      "checksum": "0b7f778763378e74568b1df11a529dab"
     },
     "docs/index.html": {
-      "checksum": "4a0514416a036a0341b824ff10fd3831"
+      "checksum": "39b74448b2752fa46d1e9dd5e19a473b"
+    },
+    "docs/manifest.json": {
+      "checksum": "6a5e25f467233329b2e9a02a2ad97c43"
     },
     "docs/resources.html": {
-      "checksum": "df0bfd8034bbe5636567245976bc1dc5"
+      "checksum": "1b058528e90e90ffd9ab46dd16307390"
     },
     "docs/schedule.html": {
-      "checksum": "7faefab033dd83f3b65ccc56b794f5cf"
+      "checksum": "34a6e1d569b2f066d100fad9c3bd7e1a"
     },
     "docs/search.json": {
-      "checksum": "177fc77b82c4e370ee9b35a82351cefb"
+      "checksum": "37ae9167ba46e687f543db466c8f012a"
     },
     "docs/setup.html": {
-      "checksum": "e71e35bd22b5943a6f73de0fd9adf971"
+      "checksum": "b13d5bd128013291560ae41c68a7de06"
     },
     "docs/site_libs/anchor-4.2.2/anchor.min.js": {
       "checksum": "8fda5f162495588d22e2d0bb63a338ac"
@@ -1119,8 +2073,8 @@
     "docs/site_libs/webcomponents-2.0.0/webcomponents.js": {
       "checksum": "21db988b54aedc8fbc5d6ffb6aa98a8c"
     },
-    "docs/test.html": {
-      "checksum": "1ec16e1871f04ca8130dd9b2196889a0"
+    "docs/www/assignment.PNG": {
+      "checksum": "0bee918bacbfe23bf66f746a3cf7e83f"
     },
     "docs/www/Atorus_Logo_Screen.svg": {
       "checksum": "9c621aa5244d520b5f34c092551f39ea"
@@ -1152,6 +2106,9 @@
     "docs/www/lubridate.png": {
       "checksum": "4592316fa64a7caaa915d336d414e6dd"
     },
+    "docs/www/maya-gans.png": {
+      "checksum": "e212908ca06a1e0d8c3810fb4e57936c"
+    },
     "docs/www/mike-stackhouse.jpg": {
       "checksum": "60a4a5d35259abe0cd0f9841511a81b3"
     },
@@ -1160,6 +2117,9 @@
     },
     "docs/www/phuse_logo.svg": {
       "checksum": "cf3e4996e46eb6b63e3e9b589c444133"
+    },
+    "docs/www/pipe.png": {
+      "checksum": "930f3b13a7b1defed4592fffa6d687a2"
     },
     "docs/www/stringr.png": {
       "checksum": "7090c91ac9cc554962bd49006e492c20"
@@ -1177,10 +2137,13 @@
       "checksum": "462ee7e00a3fa5fa111341d6e0b5d17c"
     },
     "index.Rmd": {
-      "checksum": "3ab768cf8489f387f2c6d04f32f268ae"
+      "checksum": "4255aa84976cce8a5602378940d5e3d4"
     },
     "packrat/desc/askpass": {
       "checksum": "5e28e0ee4fff3c83eb23f658c43f3c96"
+    },
+    "packrat/desc/backports": {
+      "checksum": "fc37d50c8709aa40ab098fe1b33a355d"
     },
     "packrat/desc/base64enc": {
       "checksum": "bb8bc9fbfc52ae13ffc266396e7842ef"
@@ -1191,6 +2154,21 @@
     "packrat/desc/brio": {
       "checksum": "c9ec294fe761acd6de4fc6fefea6f3d0"
     },
+    "packrat/desc/checkmate": {
+      "checksum": "cbac0a1d6ca1446da4717d718ff497b4"
+    },
+    "packrat/desc/cli": {
+      "checksum": "ae643eb81bc183cb4b36126cc37df40d"
+    },
+    "packrat/desc/colorspace": {
+      "checksum": "0a055decb309db1107312a641dfa1002"
+    },
+    "packrat/desc/commonmark": {
+      "checksum": "05bb1842f8525f2d1d6ea9fcf9fff712"
+    },
+    "packrat/desc/crayon": {
+      "checksum": "b9623a3446a3b5a444875e6a4d1e2277"
+    },
     "packrat/desc/digest": {
       "checksum": "79cbe680fa539832f108c4b98e69f0e0"
     },
@@ -1199,6 +2177,9 @@
     },
     "packrat/desc/downlit": {
       "checksum": "225fcad4d008d8f50f4778dd722732ce"
+    },
+    "packrat/desc/dplyr": {
+      "checksum": "419d6b4923ed1b9b0115f11cb49a3d9d"
     },
     "packrat/desc/ellipsis": {
       "checksum": "bb9cbf6b868c7796b96bba296c21be01"
@@ -1209,11 +2190,26 @@
     "packrat/desc/fansi": {
       "checksum": "f97598d465b28ea7525da21b6696943d"
     },
+    "packrat/desc/farver": {
+      "checksum": "5fd6d4fe0af42440ce429e0e0bb56353"
+    },
+    "packrat/desc/fs": {
+      "checksum": "f322d8a192d48568464048cbc5f3b9b9"
+    },
     "packrat/desc/generics": {
       "checksum": "7b5d51dd00ffabb740a9c1cac3c14d73"
     },
+    "packrat/desc/ggplot2": {
+      "checksum": "6c39a37ef47215012f18c01faf4e02e5"
+    },
     "packrat/desc/glue": {
       "checksum": "a7ea2fdc696ab0a854d4fd14be558da5"
+    },
+    "packrat/desc/gt": {
+      "checksum": "e091381d67370b4878c73b185090536c"
+    },
+    "packrat/desc/gtable": {
+      "checksum": "9b361e86d792ba995ee650266da44625"
     },
     "packrat/desc/highr": {
       "checksum": "53a26231d7e36bf750a9ad1ff0d53b97"
@@ -1221,11 +2217,23 @@
     "packrat/desc/htmltools": {
       "checksum": "ae8da414fd346848a1146fb456ac3f05"
     },
+    "packrat/desc/isoband": {
+      "checksum": "725df363f6f8f7b2842d5d345de6ac08"
+    },
     "packrat/desc/jsonlite": {
       "checksum": "19511f086c9da427e0becc44b43ba6ee"
     },
     "packrat/desc/knitr": {
       "checksum": "ffffd24d8db370dc61651f22235df796"
+    },
+    "packrat/desc/labeling": {
+      "checksum": "c0300f0906399b15d925d99433e870dd"
+    },
+    "packrat/desc/lattice": {
+      "checksum": "91c74e3b0e68887f7489da64a933b80d"
+    },
+    "packrat/desc/lifecycle": {
+      "checksum": "c77895f5f92ab86d6ef80961d41a95b2"
     },
     "packrat/desc/lubridate": {
       "checksum": "eab530dea7c296774d33ba32e5847bd0"
@@ -1236,14 +2244,47 @@
     "packrat/desc/markdown": {
       "checksum": "464689ba22dbb9805ede50a2ba28dd0c"
     },
+    "packrat/desc/MASS": {
+      "checksum": "f094356e1ffc3b63c0a24db20c2526e1"
+    },
+    "packrat/desc/Matrix": {
+      "checksum": "e851d6621dfc998387f7ef6e5421e028"
+    },
+    "packrat/desc/mgcv": {
+      "checksum": "5256a53a2e34f3fe57b709b35e8f5527"
+    },
     "packrat/desc/mime": {
       "checksum": "6de5ba0fe2990b9252250977c6eaa079"
+    },
+    "packrat/desc/munsell": {
+      "checksum": "b10b3f319a5b8ce7eab43c1ae8a61cc6"
+    },
+    "packrat/desc/nlme": {
+      "checksum": "fdbe7e70264220ad203d66b87949a625"
     },
     "packrat/desc/openssl": {
       "checksum": "716e3d872489b8d90810de7265625530"
     },
+    "packrat/desc/pillar": {
+      "checksum": "7fa56d44c4821bb2a1e6dfc863dc857c"
+    },
+    "packrat/desc/pkgconfig": {
+      "checksum": "ce444742f4c1f62ad9133e9d7cabf615"
+    },
     "packrat/desc/png": {
       "checksum": "8b7591b9da878319656bcd2eff427c04"
+    },
+    "packrat/desc/purrr": {
+      "checksum": "2345ad162786d48bbc904e9968afbdba"
+    },
+    "packrat/desc/R6": {
+      "checksum": "8655e28c796e36518f2deac1a99f8af6"
+    },
+    "packrat/desc/rappdirs": {
+      "checksum": "df65a859614fcf5154b6ee1e7c5ab17f"
+    },
+    "packrat/desc/RColorBrewer": {
+      "checksum": "6e9767c455e4e1ba87bb127db794e00e"
     },
     "packrat/desc/Rcpp": {
       "checksum": "039f7d362220e86819012d571ab3ceaf"
@@ -1260,6 +2301,12 @@
     "packrat/desc/rstudioapi": {
       "checksum": "eab2b724fdcb666066ce83825c6dfe1e"
     },
+    "packrat/desc/sass": {
+      "checksum": "5f775a9c5389fef68d49df8f08f42950"
+    },
+    "packrat/desc/scales": {
+      "checksum": "b17d39c8456f90f871bde683eba64356"
+    },
     "packrat/desc/stringi": {
       "checksum": "53779b99a11f4a006dfa233f892f9af7"
     },
@@ -1269,14 +2316,29 @@
     "packrat/desc/sys": {
       "checksum": "98a13b1866222bd51359316dec6cf240"
     },
+    "packrat/desc/tibble": {
+      "checksum": "32ddd5a280ef7f17e3a3a566fb4be520"
+    },
+    "packrat/desc/tidyselect": {
+      "checksum": "f726bbd40d4ffc6ec932d303fccc7214"
+    },
     "packrat/desc/tinytex": {
       "checksum": "3f9f541e575a4d357b7fc7d0127443fb"
+    },
+    "packrat/desc/utf8": {
+      "checksum": "71d37471125f53d48202323178b317a4"
     },
     "packrat/desc/vctrs": {
       "checksum": "56f5a621b726ad38e8623afb3e80bcec"
     },
+    "packrat/desc/viridisLite": {
+      "checksum": "d2be0d69272674849d2d5cd28f8ada00"
+    },
     "packrat/desc/whisker": {
       "checksum": "b39659eb804a04339923242dacb70712"
+    },
+    "packrat/desc/withr": {
+      "checksum": "a112953b10ddd222c116fdaad68e65eb"
     },
     "packrat/desc/xfun": {
       "checksum": "8dc720720e5c14640b70215acbfbbe4f"
@@ -1288,13 +2350,13 @@
       "checksum": "eec28b3ac5d88f92b8360e6d7a507b1f"
     },
     "packrat/packrat.lock": {
-      "checksum": "174b367c4bb4282dcdaae7d4cb61b647"
+      "checksum": "b13621bc15a97ab27ddfb50291b88909"
     },
     "README.md": {
       "checksum": "37fde7190d51087bb563d2ba08befb6f"
     },
     "resources.Rmd": {
-      "checksum": "2e501fd7f29fe4cfd1262f548a2fcb90"
+      "checksum": "2ab518e0e08a862986524360a8993c3b"
     },
     "schedule.Rmd": {
       "checksum": "47465b78a618d25d27dac45406fbb4b4"
@@ -1365,6 +2427,9 @@
     "site_libs/jquery-1.11.3/jquery.min.js": {
       "checksum": "895323ed2f7258af4fae2c738c8aea49"
     },
+    "www/assignment.PNG": {
+      "checksum": "0bee918bacbfe23bf66f746a3cf7e83f"
+    },
     "www/Atorus_Logo_Screen.svg": {
       "checksum": "9c621aa5244d520b5f34c092551f39ea"
     },
@@ -1395,6 +2460,9 @@
     "www/lubridate.png": {
       "checksum": "4592316fa64a7caaa915d336d414e6dd"
     },
+    "www/maya-gans.png": {
+      "checksum": "e212908ca06a1e0d8c3810fb4e57936c"
+    },
     "www/mike-stackhouse.jpg": {
       "checksum": "60a4a5d35259abe0cd0f9841511a81b3"
     },
@@ -1403,6 +2471,9 @@
     },
     "www/phuse_logo.svg": {
       "checksum": "cf3e4996e46eb6b63e3e9b589c444133"
+    },
+    "www/pipe.png": {
+      "checksum": "930f3b13a7b1defed4592fffa6d687a2"
     },
     "www/stringr.png": {
       "checksum": "7090c91ac9cc554962bd49006e492c20"
