@@ -74,7 +74,7 @@ data.frame(
 
 
 
-These two methods yeild the **same results**, but the convention is to use `<-`. Learn more [here](https://stat.ethz.ch/R-manual/R-patched/library/base/html/assignOps.html)
+These two methods yield the **same results**, but the convention is to use `<-`. Learn more [here](https://stat.ethz.ch/R-manual/R-patched/library/base/html/assignOps.html)
 
 ## Testing Equality
 
@@ -88,13 +88,30 @@ These two methods yeild the **same results**, but the convention is to use `<-`.
 | > | greater than | `x > y` |
 | >= | greater than or equal to | `x >= y` |
 | `|` | or | `x | y` |
+
+## Arithmetic Operators
+
+
+| operator | Meaning | Example | Result |
+| -------- | ------- | ------- | ------ |
+| + | addition | `1 + 1 == 2` | 2 |
+| - | subtraction | `1 -1 == 0` | 0 |
+| / | division | `6/3 == 2` | 2 |
+| * | multiplication | `2 * 3 == 6` | 6 |
+| ^ or `**` | exponentiation | `3 ** 2` or `3 ^ 2` | 9 |
+| `%%` | modulus | `6%%5` | 1 |
+| `%%` | integer division | `7 %% 2` | 3
+
+
+## A Couple More
+
+
+| Operator | Meaning | Example | 
+| --- | --- | --- |
 | & | and | `x & y` |
 | ! | not | `!x` | 
 | %in% | in | `x %in% y` |
-| + | add | `x + y` |
-| - | subtract | `x - y` |
-| % | divide | `x % y` |
-| * | multiply | `x*y` |
+
 
 
 ## The Pipe `%>%` Operator
@@ -104,6 +121,8 @@ The pipe, `%>%`, is used to create a pipeline of functions and can be read as "a
 <img alt="tweet showing how to read the pipe as waking up %>% getting dressed" src="www/pipe.png"></img>
 
 ## What are packages?
+
+
 
 ## What is the tidyverse?
 

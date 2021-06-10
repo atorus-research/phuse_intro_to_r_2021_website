@@ -5,28 +5,35 @@ description: |
 site: distill::distill_website
 ---
 
-<div style="display:flex;justify-content:center;"><img src="www/Atorus_Logo_Screen.svg" style="width:30%;padding:20px;"></img><img src="www/phuse_logo.svg" style="width:30%;padding:20px;"></img></div>
+<div style="display:flex;justify-content:center;"><img src="www/Atorus_Logo_Screen.svg" style="width:30%;padding:20px;"></img><img src="www/rstudio_logo.png" style="width:30%;padding:20px;"></img><img src="www/phuse_logo.svg" style="width:30%;padding:20px;"></img></div>
 
  
 ### What You'll Learn
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+In this workshop, statistical programmers will be introduced to the R programming language and the tidyverse, using familiar clinical examples. Attendees will leave with a basic understanding of what R is, what the tidyverse is and why it’s important, and what the open-source landscape has to offer us in the world of clinical statistical programming.
+
+Hands-on programming examples will be offered to give attendees some basic knowledge of the tools available in R to support common clinical workflows, such as SDTM, ADaM and clinical TFLs. If you’ve never worked in R before, but want to see how it can be used in your day-to-day tasks, come join us and see what this powerful open-source language has to offer!
   
 ### Instructors
 
 <div class="instructors row">
 <div class="instructor col-sm-3">
+  <img src="www/phil.jpg"></img>
+  **Phil Bowsher** <br>
+  Director of Life Sciences & Healthcare at RStudio, Inc
+</div>
+<div class="instructor col-sm-3">
   <img src="www/mike-stackhouse.jpg"></img>
   **Mike Stackhouse** <br>
   Cheif Innovation Officer
 </div>
+</div>
+
+<div class="instructors row">
 <div class="instructor col-sm">
   <img src="www/nathan-kosiba.jpg"></img>
   **Nathan Kosiba** <br>
   Software Developer
 </div>
-</div>
-
-<div class="instructors row">
 <div class="instructor col-sm">
   <img src="www/eli-miller.jpg"></img>
   **Eli Miller** <br>
