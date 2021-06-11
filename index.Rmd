@@ -17,14 +17,14 @@ Hands-on programming examples will be offered to give attendees some basic knowl
 
 <div class="instructors row">
 <div class="instructor col-sm-3">
-  <img src="www/phil.jpg"></img>
-  **Phil Bowsher** <br>
-  Director of Life Sciences & Healthcare at RStudio, Inc
-</div>
-<div class="instructor col-sm-3">
   <img src="www/mike-stackhouse.jpg"></img>
   **Mike Stackhouse** <br>
   Cheif Innovation Officer
+</div>
+<div class="instructor col-sm">
+  <img src="www/eli-miller.jpg"></img>
+  **Eli Miller** <br>
+  Cloud Solutions Architect
 </div>
 </div>
 
@@ -35,13 +35,13 @@ Hands-on programming examples will be offered to give attendees some basic knowl
   Software Developer
 </div>
 <div class="instructor col-sm">
-  <img src="www/eli-miller.jpg"></img>
-  **Eli Miller** <br>
-  DevOps Engineer
-</div>
-<div class="instructor col-sm">
   <img src="www/maya-gans.png"></img>
   **Maya Gans** <br>
   Data Visualization Engineer
+</div>
+ <div class="instructor col-sm-3">
+  <img src="www/phil.jpg"></img>
+  **Phil Bowsher** <br>
+  Director of Life Sciences & Healthcare at RStudio, Inc
 </div>
 </div>
