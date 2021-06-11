@@ -2581,8 +2581,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#introduction">Introduction</a>
-<ul>
 <li><a href="#workshop-goals">Workshop Goals</a></li>
 <li><a href="#object-types">Object Types</a></li>
 <li><a href="#assigning-variables">Assigning Variables</a></li>
@@ -2592,9 +2590,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><a href="#the-pipe-operator">The Pipe <code>%&gt;%</code> Operator</a></li>
 <li><a href="#what-are-packages">What are packages?</a></li>
 <li><a href="#what-is-the-tidyverse">What is the tidyverse?</a></li>
-</ul></li>
-<li><a href="#working-with-data-frames">Working with Data Frames</a>
-<ul>
 <li><a href="#keep">Keep:</a></li>
 <li><a href="#drop">Drop</a></li>
 <li><a href="#sub-setting-by-rows-where">Sub-setting by rows (<code>where</code>)</a></li>
@@ -2602,23 +2597,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><a href="#sorting-data">Sorting data</a></li>
 <li><a href="#set-aka-bind_rows">set AKA bind_rows</a></li>
 <li><a href="#merge-aka-_join">merge AKA *_join</a></li>
-<li><a href="#defining-new-variables">Defining New Variables</a>
-<ul>
 <li><a href="#addingediting-a-variable">Adding/editing a variable</a></li>
 <li><a href="#if_else-logic"><code>if_else</code> logic</a></li>
 <li><a href="#rowwise-vs-column-operators">rowwise vs column operators</a></li>
-</ul></li>
-<li><a href="#summarizing-data">Summarizing Data</a>
-<ul>
 <li><a href="#descriptive-statistics">Descriptive Statistics</a></li>
 <li><a href="#grouped-descriptive-statistics">Grouped Descriptive Statistics</a></li>
-<li><a href="#counting">Counting</a></li>
-</ul></li>
+<li><a href="#counting">Counting</a>
+<ul>
+<li><a href="#option-1">Option 1</a></li>
+<li><a href="#option-2">Option 2</a></li>
+<li><a href="#grouped-option-1">Grouped Option 1</a></li>
+<li><a href="#other-options">Other Options</a></li>
 </ul></li>
 </ul>
 </nav>
 </div>
-<h1 id="introduction">Introduction</h1>
+<style>
+.row {
+  display: flex;
+  column-gap: 20px;
+}
+
+.col-md-6 {
+  width: 45%;
+}
+</style>
 <h2 id="workshop-goals">Workshop Goals</h2>
 <p>This workshop is not exhaustive but meant to be a first contact with the R programming language. We hope you leave the workshop able to say:</p>
 <blockquote>
@@ -3149,8 +3152,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <blockquote>
 <p>Install the complete tidyverse with: <code>install.packages("tidyverse")</code></p>
 </blockquote>
-<h1 id="working-with-data-frames">Working with Data Frames</h1>
-<h3 id="keep">Keep:</h3>
+<h2 id="keep">Keep:</h2>
 <p>We can keep only the columns <span style="color:#1C6972;">a</span> and <span style="color:#FDD26E;">b</span> from the original <code>dat</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
 <style>html {
@@ -3899,7 +3901,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
 </table></div>
 </div>
-<h3 id="drop">Drop</h3>
+<h2 id="drop">Drop</h2>
 <p>We can drop column <span style="color:#FF7F41;">c</span>, choosing everything but column <span style="color:#FF7F41;">c</span>:</p>
 <div class="layout-chunk" data-layout="l-body">
 <style>html {
@@ -4648,7 +4650,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
 </table></div>
 </div>
-<h3 id="sub-setting-by-rows-where">Sub-setting by rows (<code>where</code>)</h3>
+<h2 id="sub-setting-by-rows-where">Sub-setting by rows (<code>where</code>)</h2>
 <p>We can subset <code>dat</code> where <span style="color:#1C6972;">f &gt;= 5</span></p>
 <div class="layout-chunk" data-layout="l-body">
 <style>html {
@@ -5393,7 +5395,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
 </table></div>
 </div>
-<h3 id="rename">Rename</h3>
+<h2 id="rename">Rename</h2>
 <p>We can use R’s <code>rename</code> function to rename columns <code>a</code> and <code>b</code> to <code>groups</code> and <code>values</code>. Given this starting data frame:</p>
 <div class="layout-chunk" data-layout="l-body">
 <style>html {
@@ -6150,7 +6152,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
 </table></div>
 </div>
-<h3 id="sorting-data">Sorting data</h3>
+<h2 id="sorting-data">Sorting data</h2>
 <p>Compared to SAS®, you don’t have to sort a lot of the time!</p>
 <p>When do I sort? - Presentation - Order dependent operations (i.e. baseline flag) - Don’t need it for grouping</p>
 <p>For instance, if we want to sort our data frame by column b:</p>
@@ -6906,12 +6908,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
 </table></div>
 </div>
-<h3 id="set-aka-bind_rows">set AKA bind_rows</h3>
+<h2 id="set-aka-bind_rows">set AKA bind_rows</h2>
 <p><img alt="two dataframes merged based on column names" src="www/bind_rows.PNG"></img></p>
-<h3 id="merge-aka-_join">merge AKA *_join</h3>
+<h2 id="merge-aka-_join">merge AKA *_join</h2>
 <p><img alt="venn diagrams of inner join, outer join, left and right join" src="www/join.PNG"></img></p>
-<h2 id="defining-new-variables">Defining New Variables</h2>
-<h3 id="addingediting-a-variable">Adding/editing a variable</h3>
+<h2 id="addingediting-a-variable">Adding/editing a variable</h2>
 <p>We can use the <code>mutate</code> function to create new columns using the data from existing columns. For instance we can create a new column <code>c</code> by adding 10 to column <code>b</code>. We can also use the <code>mutate</code> function to or modify existing columns in place. For example, rather than create a new column, we can overwrite column <code>a</code> adding <code>-</code> before and after each entry.</p>
 <h4 id="original-data">Original Data</h4>
 <div class="layout-chunk" data-layout="l-body">
@@ -7664,7 +7665,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
 </table></div>
 </div>
-<h3 id="if_else-logic"><code>if_else</code> logic</h3>
+<h2 id="if_else-logic"><code>if_else</code> logic</h2>
 <p>We can use <code>if_else</code> within a mutate to create new columns based on another column. For instance, we can create a categorical column of <code>High</code> and <code>Low</code> values based on column <code>b</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
 <style>html {
@@ -9187,17 +9188,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
 </table></div>
 </div>
-<h3 id="rowwise-vs-column-operators">rowwise vs column operators</h3>
-<style>
-.row {
-  display: flex;
-  column-gap: 20px;
-}
-
-.col-md-6 {
-  width: 45%;
-}
-</style>
+<h2 id="rowwise-vs-column-operators">rowwise vs column operators</h2>
 <div class="row">
 <div class="col-md-6">
 <div class="layout-chunk" data-layout="l-body">
@@ -9968,8 +9959,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 </div>
 </div>
-<h2 id="summarizing-data">Summarizing Data</h2>
-<h3 id="descriptive-statistics">Descriptive Statistics</h3>
+<h2 id="descriptive-statistics">Descriptive Statistics</h2>
 <div class="layout-chunk" data-layout="l-body">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
@@ -10708,7 +10698,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
 </table></div>
 </div>
-<h3 id="grouped-descriptive-statistics">Grouped Descriptive Statistics</h3>
+<h2 id="grouped-descriptive-statistics">Grouped Descriptive Statistics</h2>
 <div class="layout-chunk" data-layout="l-body">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
@@ -11457,8 +11447,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
 </table></div>
 </div>
-<h3 id="counting">Counting</h3>
-<h4 id="option-1">Option 1</h4>
+<h2 id="counting">Counting</h2>
+<h3 id="option-1">Option 1</h3>
 <div class="layout-chunk" data-layout="l-body">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
@@ -12203,7 +12193,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
 </table></div>
 </div>
-<h4 id="option-2">Option 2</h4>
+<h3 id="option-2">Option 2</h3>
 <div class="layout-chunk" data-layout="l-body">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
@@ -12945,7 +12935,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
 </table></div>
 </div>
-<h4 id="grouped-option-1">Grouped Option 1</h4>
+<h3 id="grouped-option-1">Grouped Option 1</h3>
 <div class="layout-chunk" data-layout="l-body">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
@@ -13690,7 +13680,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
 </table></div>
 </div>
-<h4 id="other-options">Other Options</h4>
+<h3 id="other-options">Other Options</h3>
 <p>In the course we also showcase 2 other ways to achieve the same goal. The first is using <code>group_by</code> and <code>count</code></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">

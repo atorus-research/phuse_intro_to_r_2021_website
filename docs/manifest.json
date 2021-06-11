@@ -1948,13 +1948,13 @@
       "checksum": "4eadf7f4bed6842bb75eec4714091525"
     },
     "_site.yml": {
-      "checksum": "8b2a55dc2b3d9b1cc13b1344e49f6966"
+      "checksum": "eb388e42b9059866ff2baf174146f890"
     },
     ".nojekyll": {
       "checksum": "d41d8cd98f00b204e9800998ecf8427e"
     },
     ".RData": {
-      "checksum": "dee73a029f22d67ecab6a910e4e8ce6c"
+      "checksum": "5c7e54d9853dd711e07ffd921f9d0d83"
     },
     "atorus.css": {
       "checksum": "0b7f778763378e74568b1df11a529dab"
@@ -1963,22 +1963,22 @@
       "checksum": "0b7f778763378e74568b1df11a529dab"
     },
     "docs/index.html": {
-      "checksum": "39b74448b2752fa46d1e9dd5e19a473b"
+      "checksum": "3b4f87e12b5e042a2a9ba2272d54509a"
     },
     "docs/manifest.json": {
-      "checksum": "6a5e25f467233329b2e9a02a2ad97c43"
+      "checksum": "342e54d10c224ecc4d411152741aff0a"
     },
     "docs/resources.html": {
-      "checksum": "1b058528e90e90ffd9ab46dd16307390"
+      "checksum": "ea81aaecce9c69d4f70089dc8762aa16"
     },
     "docs/schedule.html": {
-      "checksum": "34a6e1d569b2f066d100fad9c3bd7e1a"
+      "checksum": "67b9e964d899fc80c2082c789b555aae"
     },
     "docs/search.json": {
-      "checksum": "37ae9167ba46e687f543db466c8f012a"
+      "checksum": "d0e454aeb7d43d70c9730af59c1426fc"
     },
     "docs/setup.html": {
-      "checksum": "b13d5bd128013291560ae41c68a7de06"
+      "checksum": "01900dc0abc7018c78611d61e3bb68e7"
     },
     "docs/site_libs/anchor-4.2.2/anchor.min.js": {
       "checksum": "8fda5f162495588d22e2d0bb63a338ac"
@@ -2073,6 +2073,9 @@
     "docs/site_libs/webcomponents-2.0.0/webcomponents.js": {
       "checksum": "21db988b54aedc8fbc5d6ffb6aa98a8c"
     },
+    "docs/slides.html": {
+      "checksum": "6873a1d5458cf9f76c6557a33b5575a2"
+    },
     "docs/www/assignment.PNG": {
       "checksum": "0bee918bacbfe23bf66f746a3cf7e83f"
     },
@@ -2115,11 +2118,17 @@
     "docs/www/nathan-kosiba.jpg": {
       "checksum": "d22106bae36e9541cecd9484ee0ead2b"
     },
+    "docs/www/phil.jpg": {
+      "checksum": "44aec7cc6573cfe76d2b8885fdc06e87"
+    },
     "docs/www/phuse_logo.svg": {
       "checksum": "cf3e4996e46eb6b63e3e9b589c444133"
     },
     "docs/www/pipe.png": {
       "checksum": "930f3b13a7b1defed4592fffa6d687a2"
+    },
+    "docs/www/rstudio_logo.png": {
+      "checksum": "4b8deec9d86efcf08c438a57fd65ba38"
     },
     "docs/www/stringr.png": {
       "checksum": "7090c91ac9cc554962bd49006e492c20"
@@ -2137,7 +2146,7 @@
       "checksum": "462ee7e00a3fa5fa111341d6e0b5d17c"
     },
     "index.Rmd": {
-      "checksum": "4255aa84976cce8a5602378940d5e3d4"
+      "checksum": "ffef6c8ca616e2f24ab3a59185e8a06c"
     },
     "packrat/desc/askpass": {
       "checksum": "5e28e0ee4fff3c83eb23f658c43f3c96"
@@ -2356,7 +2365,7 @@
       "checksum": "37fde7190d51087bb563d2ba08befb6f"
     },
     "resources.Rmd": {
-      "checksum": "2ab518e0e08a862986524360a8993c3b"
+      "checksum": "9a9b1828c6a66cfb1981d9de4d5574e0"
     },
     "schedule.Rmd": {
       "checksum": "47465b78a618d25d27dac45406fbb4b4"
@@ -2427,6 +2436,9 @@
     "site_libs/jquery-1.11.3/jquery.min.js": {
       "checksum": "895323ed2f7258af4fae2c738c8aea49"
     },
+    "slides.Rmd": {
+      "checksum": "30cddc6d46021e7763e624e29dae97ce"
+    },
     "www/assignment.PNG": {
       "checksum": "0bee918bacbfe23bf66f746a3cf7e83f"
     },
@@ -2469,11 +2481,17 @@
     "www/nathan-kosiba.jpg": {
       "checksum": "d22106bae36e9541cecd9484ee0ead2b"
     },
+    "www/phil.jpg": {
+      "checksum": "44aec7cc6573cfe76d2b8885fdc06e87"
+    },
     "www/phuse_logo.svg": {
       "checksum": "cf3e4996e46eb6b63e3e9b589c444133"
     },
     "www/pipe.png": {
       "checksum": "930f3b13a7b1defed4592fffa6d687a2"
+    },
+    "www/rstudio_logo.png": {
+      "checksum": "4b8deec9d86efcf08c438a57fd65ba38"
     },
     "www/stringr.png": {
       "checksum": "7090c91ac9cc554962bd49006e492c20"

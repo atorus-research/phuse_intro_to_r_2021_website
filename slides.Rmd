@@ -5,6 +5,17 @@ output:
     toc: true
 ---
 
+<style>
+.row {
+  display: flex;
+  column-gap: 20px;
+}
+
+.col-md-6 {
+  width: 45%;
+}
+</style>
+
 
 ## Workshop Goals
 
@@ -135,11 +146,10 @@ Packagers are collections of functions and tools to expand the capabilities of R
 > Install the complete tidyverse with:
 `install.packages("tidyverse")`
 
-# Working with Data Frames
-
-### Keep:
+## Keep:
 
 We can keep only the columns <span style="color:#1C6972;">a</span> and <span style="color:#FDD26E;">b</span> from the original `dat`:
+
 
 ```{r, echo=FALSE}
 data.frame(
@@ -171,6 +181,7 @@ data.frame(
   )
 ```
 
+
 With the code:
 
 ```{r, eval=FALSE}
@@ -201,9 +212,11 @@ data.frame(
   )
 ```
 
-### Drop
+
+## Drop
 
 We can drop column <span style="color:#FF7F41;">c</span>, choosing everything but column <span style="color:#FF7F41;">c</span>:
+
 
 ```{r, echo=FALSE}
 data.frame(
@@ -266,7 +279,7 @@ data.frame(
 ```
 
 
-### Sub-setting by rows (`where`)
+## Sub-setting by rows (`where`)
 
 We can subset `dat` where <span style="color:#1C6972;">f >= 5</span>
 
@@ -315,7 +328,7 @@ data.frame(
   ) 
 ```
 
-### Rename
+## Rename
 
 We can use R's `rename` function to rename columns `a` and `b` to `groups` and `values`. Given this starting data frame:
 
@@ -393,7 +406,7 @@ data.frame(
 
 
 
-### Sorting data
+## Sorting data
 
 Compared to SAS®, you don't have to sort a lot of the time!
 
@@ -486,17 +499,16 @@ data.frame(
 ```
 
 
-### set AKA bind_rows
+## set AKA bind_rows
 
 <img alt="two dataframes merged based on column names" src="www/bind_rows.PNG"></img>
 
-### merge AKA *_join
+## merge AKA *_join
 
 <img alt="venn diagrams of inner join, outer join, left and right join" src="www/join.PNG"></img>
 
-## Defining New Variables
 
-### Adding/editing a variable
+## Adding/editing a variable
 
 We can use the `mutate` function to create new columns using the data from existing columns. For instance we can create a new column `c` by adding 10 to column `b`. We can also use the `mutate` function to or modify existing columns in place. For example, rather than create a new column, we can overwrite column `a` adding `-` before and after each entry. 
 
@@ -565,7 +577,7 @@ data.frame(
   )
 ```
 
-### `if_else` logic
+## `if_else` logic
 
 We can use `if_else` within a mutate to create new columns based on another column. For instance, we can create a categorical column of `High` and `Low` values based on column `b`:
 
@@ -736,18 +748,7 @@ data.frame(
 ```
 
 
-### rowwise vs column operators 
-
-<style>
-.row {
-  display: flex;
-  column-gap: 20px;
-}
-
-.col-md-6 {
-  width: 45%;
-}
-</style>
+## rowwise vs column operators 
 
 
 <div class="row">
@@ -849,9 +850,7 @@ data.frame(
 </div>
 </div>
 
-## Summarizing Data
-
-### Descriptive Statistics
+## Descriptive Statistics
 
 ```{r, echo=FALSE}
 data.frame(
@@ -887,7 +886,7 @@ data.frame(
   )
 ```
 
-### Grouped Descriptive Statistics
+## Grouped Descriptive Statistics
 
 ```{r, echo=FALSE}
 data.frame(
@@ -950,9 +949,9 @@ data.frame(
   )
 ```
 
-### Counting
+## Counting
 
-#### Option 1
+### Option 1
 
 ```{r, echo=FALSE}
 data.frame(
@@ -1020,7 +1019,7 @@ data.frame(
   )
 ```
 
-#### Option 2
+### Option 2
 
 ```{r, echo=FALSE}
 data.frame(
@@ -1085,7 +1084,7 @@ data.frame(
   )
 ```
 
-#### Grouped Option 1
+### Grouped Option 1
 
 ```{r, echo=FALSE}
 data.frame(
@@ -1153,7 +1152,7 @@ data.frame(
   )
 ```
 
-#### Other Options
+### Other Options
 
 In the course we also showcase 2 other ways to achieve the same goal. The first is using `group_by` and `count`
 
