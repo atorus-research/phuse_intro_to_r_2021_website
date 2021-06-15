@@ -12,11 +12,15 @@ output:
 
 During the workshop we will be using RStudio Cloud. The benefit of this is we can all use R with the same configurations, rather than setting up R on each operating system.
 
-To log into the cloud use this link: www.TODO.com where you should be able to make a copy of the project for yourself. 
+You will receive an email with the link to log in, **and you will need to confirm your email address**. Once logged in, you should see the Phuse_intro_to_R_2021 project:
 
-TODO: screenshot of this process?
 
-## Run the Sample Code
+<img alt="rstudio cloud home screen with phuse_intro_to_r_2021 project" src="www/login.PNG"></img>
 
-TODO: I'm pretty sure if everyone uses a fork of our cloud project they'll all have the libraries and stuff they need but maybe we can walk them through running a test file that will fail if they didn't have the libraries installed/loaded? 
+
+
+Clicking on the project will open an RStudio Session. This is what we will be using to program for the entirety of the course
+
+
+<img alt="inside the phuse_intro_to_r_2021 project" src="www/ide.PNG"></img>
 
