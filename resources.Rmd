@@ -4,6 +4,23 @@ output:
   distill::distill_article
 ---
 
+# Function References 
+
+| Function | Purpose |
+| --- | ---- |
+| `select` | Selects variables in a data frame|
+| `filter` | Subsets a data frame, retaining all rows that satisfy your conditions |
+| `rename` |  Changes the names of individual variables |
+| `arrange` |  Orders the rows of a data frame by the values of selected columns |
+| `bind_rows` | Binds many data frames into one |
+| `*_join` | Joins add columns from y to x, matching rows based on the keys |
+| `mutate` | Adds new variables and preserves existing ones |
+| `if_else` |  Returns a value with the same shape as test which is filled with elements selected from either yes or no depending on whether the element of test is TRUE or FALSE |
+| `case_when` | Allows you to vectorise multiple if_else() statements |
+| `rowwise` | Allows you to compute on a data frame a row-at-a-time |
+| `summarize` | Creates a new data frame. It will have one (or more) rows for each combination of grouping variables; if there are no grouping variables, the output will have a single row summarising all observations in the input. It will contain one column for each grouping variable and one column for each of the summary statistics that you have specified. |
+| `group_by` | Takes an existing tbl and converts it into a grouped tbl where operations are performed "by group" |
+| `count` |  Lets you quickly count the unique values of one or more variables |
 
 # Where to Go From Here:
 

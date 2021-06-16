@@ -2577,6 +2577,73 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
+<h1 id="function-references">Function References</h1>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>select</code></td>
+<td>Selects variables in a data frame</td>
+</tr>
+<tr class="even">
+<td><code>filter</code></td>
+<td>Subsets a data frame, retaining all rows that satisfy your conditions</td>
+</tr>
+<tr class="odd">
+<td><code>rename</code></td>
+<td>Changes the names of individual variables</td>
+</tr>
+<tr class="even">
+<td><code>arrange</code></td>
+<td>Orders the rows of a data frame by the values of selected columns</td>
+</tr>
+<tr class="odd">
+<td><code>bind_rows</code></td>
+<td>Binds many data frames into one</td>
+</tr>
+<tr class="even">
+<td><code>*_join</code></td>
+<td>Joins add columns from y to x, matching rows based on the keys</td>
+</tr>
+<tr class="odd">
+<td><code>mutate</code></td>
+<td>Adds new variables and preserves existing ones</td>
+</tr>
+<tr class="even">
+<td><code>if_else</code></td>
+<td>Returns a value with the same shape as test which is filled with elements selected from either yes or no depending on whether the element of test is TRUE or FALSE</td>
+</tr>
+<tr class="odd">
+<td><code>case_when</code></td>
+<td>Allows you to vectorise multiple if_else() statements</td>
+</tr>
+<tr class="even">
+<td><code>rowwise</code></td>
+<td>Allows you to compute on a data frame a row-at-a-time</td>
+</tr>
+<tr class="odd">
+<td><code>summarize</code></td>
+<td>Creates a new data frame. It will have one (or more) rows for each combination of grouping variables; if there are no grouping variables, the output will have a single row summarising all observations in the input. It will contain one column for each grouping variable and one column for each of the summary statistics that you have specified.</td>
+</tr>
+<tr class="even">
+<td><code>group_by</code></td>
+<td>Takes an existing tbl and converts it into a grouped tbl where operations are performed “by group”</td>
+</tr>
+<tr class="odd">
+<td><code>count</code></td>
+<td>Lets you quickly count the unique values of one or more variables</td>
+</tr>
+</tbody>
+</table>
 <h1 id="where-to-go-from-here">Where to Go From Here:</h1>
 <p>We mentioned a lot of amazing packages within the R ecosystem that we leverage every day. <strong>click on the package photo for more info and documentation</strong></p>
 <div class="cards">
