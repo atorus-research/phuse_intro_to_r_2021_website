@@ -11,6 +11,11 @@
 /* Optional: embed custom fonts here with `@import`          */
 /* This must remain at the top of this file.                 */
 
+d-article a {
+    border-bottom: 0px solid rgba(0, 0, 0, 0.4); 
+    text-decoration: none;
+}
+
 .resource {
   max-width:100%;
   max-height: 100%;

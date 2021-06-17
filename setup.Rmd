@@ -9,7 +9,9 @@ description: |
 
 During the workshop we will be using RStudio Cloud. The benefit of this is we can all use R with the same configurations, rather than setting up R on each operating system.
 
-You will receive an email with the link to log in, **and you will need to confirm your email address**. Once logged in, you should see the Phuse_intro_to_R_2021 project:
+You can find the project associated with the workshop here: https://rstudio.cloud/project/2623930. Once logged in, you should see the Phuse_intro_to_R_2021 project:
+
+
 
 
 <img alt="rstudio cloud home screen with phuse_intro_to_r_2021 project" src="www/login.PNG"></img>
