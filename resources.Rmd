@@ -72,7 +72,7 @@ We mentioned a lot of amazing packages within the R ecosystem that we leverage e
   </div>
   
   <div class="card">
-  <a href="https://cran.r-projeccran.r-project.org/web/packages/huxtable/vignettes/huxtable.html">
+  <a href="https://cran.r-project.org/web/packages/huxtable/vignettes/huxtable.html">
   <img class="resource" src="www/huxtable.png"></img>
   </a>
   </div>
@@ -80,6 +80,8 @@ We mentioned a lot of amazing packages within the R ecosystem that we leverage e
   <div class="card">
   <a href="https://gt.rstudio.com/">
   <img class="resource" src="www/gt.png" style="width:90%;"></img>
-  <  
+  </a>
+  </div>
 
+</div>
 </div>
